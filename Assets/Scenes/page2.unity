@@ -913,7 +913,8 @@ PrefabInstance:
       propertyPath: anim
       value: 
       objectReference: {fileID: 240803555}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4727304649459279964, guid: 42d3930fee548d94a94d50e78a7c02a7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 42d3930fee548d94a94d50e78a7c02a7, type: 3}
 --- !u!1 &1484563294
 GameObject:
@@ -1016,6 +1017,37 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_MaxRayIntersections: 0
+--- !u!1 &1698223795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1698223796}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1698223796
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698223795}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 44.07534, y: 11.888006, z: 90}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1884959177 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2012108996195696380, guid: 42d3930fee548d94a94d50e78a7c02a7, type: 3}
