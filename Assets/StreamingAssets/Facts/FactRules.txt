@@ -1,0 +1,9 @@
+fact rules
+
+fact keys must be exact same as word in color brackets from story text
+
+all fact language text files need to be in the same order
+
+all fact keys in lower case
+
+all fact keys must be same for all languages, using the english word for each fact
