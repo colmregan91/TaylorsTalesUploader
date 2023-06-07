@@ -1,37 +1,24 @@
 
+using System;
 using UnityEngine;
-public class AnimationBehavior : MonoBehaviour
+
+public class AnimationBehavior : TouchBase
 {
-    private Interaction interaction;
+    [SerializeField] private Animator anim;
+    [SerializeField] private float waitTime = 1;
 
-    [SerializeField]private Animator anim;
     private int triggerHash = Animator.StringToHash("AnimTrigger");
+    private float clickTime;
 
-    private void Awake()
-    {
-        interaction = GetComponent<Interaction>();
-    }
+    protected override Action MouseDownbehavior { get => animBehavior; }
 
-    private void Start()
-    {
-        interaction.SubscribeBehavior(behavior);
-    }
 
-    private void behavior()
+    private void animBehavior()
     {
+        if (!IsPulsating) return;
+        if (Time.time < clickTime + waitTime) return;
+        if (MouseDownClip) playMouseDownClip();
         anim.SetTrigger(triggerHash);
+        clickTime = Time.time;
     }
-
-    private void OnDisable()
-    {
-        interaction.UnsubscribeBehavior(behavior);
-    }
-
 }
-
-//public interface IBehave
-//{
-//    public void Subscribe();
-//    public void Unsubscribe();
-//    public void PerformAction();
-//}

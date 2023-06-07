@@ -6,6 +6,8 @@ TagManager:
   tags:
   - StaticEnvironmentCanvas
   - InteractionCanvas
+  - FxTemporaire
+  - Skylark
   layers:
   - Default
   - TransparentFX
@@ -13,11 +15,11 @@ TagManager:
   - 
   - Water
   - UI
-  - Interaction
-  - StaticEnvironment
+  - environment
+  - interaction
   - page
-  - 
-  - 
+  - words
+  - buttons
   - 
   - 
   - 
@@ -50,5 +52,8 @@ TagManager:
     uniqueID: 2073416779
     locked: 0
   - name: Page
-    uniqueID: 1780565629
+    uniqueID: 2944275871
+    locked: 0
+  - name: Buttons
+    uniqueID: 2195504057
     locked: 0
