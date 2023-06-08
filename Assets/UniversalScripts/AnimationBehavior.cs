@@ -5,20 +5,20 @@ using UnityEngine;
 public class AnimationBehavior : TouchBase
 {
     [SerializeField] private Animator anim;
-    [SerializeField] private float waitTime = 1;
 
-    private int triggerHash = Animator.StringToHash("AnimTrigger");
-    private float clickTime;
-
+    private int triggerHash;
+    [SerializeField] private string TriggerParam;
     protected override Action MouseDownbehavior { get => animBehavior; }
 
+    public override void Awake()
+    {
+        base.Awake();
+        triggerHash = Animator.StringToHash(TriggerParam);
 
+    }
     private void animBehavior()
     {
-        if (!IsPulsating) return;
-        if (Time.time < clickTime + waitTime) return;
         if (MouseDownClip) playMouseDownClip();
         anim.SetTrigger(triggerHash);
-        clickTime = Time.time;
     }
 }

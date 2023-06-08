@@ -7,13 +7,14 @@ public class FlowersManager : TouchBase
 {
 
     [SerializeField] private Animator[] flowers;
-    private float clickTime;
-    private float waitTime = 1;
+
+  
     private Vector3 pos;
     private Camera cam;
     private Queue<Animator> flowerQueue = new Queue<Animator>();
     private float sizeMultiplier = 250;
     private Queue<Animator> offQueue = new Queue<Animator>();
+    private float clickTime;
 
     protected override Action MouseDownbehavior => flowerBehavior;
 
@@ -28,10 +29,7 @@ public class FlowersManager : TouchBase
     }
     private void flowerBehavior()
     {
-        if (!IsPulsating) return;
         if (Time.time < clickTime + waitTime) return;
-
-
         if (MouseDownClip) playMouseDownClip();
         var mouse = Input.mousePosition;
         mouse.z = 100; //distance of the plane from the camera

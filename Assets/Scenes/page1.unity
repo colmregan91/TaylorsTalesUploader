@@ -382,6 +382,7 @@ MonoBehaviour:
   TurnOffOnClick: 1
   ShouldClickAudioLoop: 0
   IsPulsating: 1
+  waitTime: 0
   MouseDownClip: {fileID: 8300000, guid: 68ef48781fed6f54ea1a3d7ca2c99323, type: 3}
   MouseUpClip: {fileID: 0}
   rb: {fileID: 345492616}
@@ -758,6 +759,7 @@ MonoBehaviour:
   TurnOffOnClick: 1
   ShouldClickAudioLoop: 0
   IsPulsating: 1
+  waitTime: 0
   MouseDownClip: {fileID: 8300000, guid: 68ef48781fed6f54ea1a3d7ca2c99323, type: 3}
   MouseUpClip: {fileID: 0}
   rb: {fileID: 673132676}
@@ -1650,6 +1652,7 @@ MonoBehaviour:
   TurnOffOnClick: 1
   ShouldClickAudioLoop: 0
   IsPulsating: 1
+  waitTime: 0
   MouseDownClip: {fileID: 8300000, guid: 68ef48781fed6f54ea1a3d7ca2c99323, type: 3}
   MouseUpClip: {fileID: 0}
   rb: {fileID: 1802802500}
@@ -3414,6 +3417,7 @@ MonoBehaviour:
   TurnOffOnClick: 1
   ShouldClickAudioLoop: 0
   IsPulsating: 1
+  waitTime: 0
   MouseDownClip: {fileID: 8300000, guid: 68ef48781fed6f54ea1a3d7ca2c99323, type: 3}
   MouseUpClip: {fileID: 0}
   rb: {fileID: 5507866}
@@ -3940,6 +3944,7 @@ MonoBehaviour:
   TurnOffOnClick: 0
   ShouldClickAudioLoop: 0
   IsPulsating: 1
+  waitTime: 1
   MouseDownClip: {fileID: 8300000, guid: d0a1d1f14fbadab498574ac73fb99e2c, type: 3}
   MouseUpClip: {fileID: 0}
   flowers:
@@ -4396,6 +4401,7 @@ MonoBehaviour:
   TurnOffOnClick: 1
   ShouldClickAudioLoop: 0
   IsPulsating: 1
+  waitTime: 0
   MouseDownClip: {fileID: 8300000, guid: 68ef48781fed6f54ea1a3d7ca2c99323, type: 3}
   MouseUpClip: {fileID: 0}
   rb: {fileID: 1515100922}

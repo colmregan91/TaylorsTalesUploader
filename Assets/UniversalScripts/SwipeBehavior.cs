@@ -72,7 +72,6 @@ public class SwipeBehavior : TouchBase
 
     private async void fly()
     {
-        if (!IsPulsating) return;
         if (MouseUpClip) playMouseUpClip();
         isFlying = true;
         flyingObjRenderer.transform.position += objTransform.forward;

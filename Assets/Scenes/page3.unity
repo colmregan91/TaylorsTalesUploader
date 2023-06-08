@@ -272,128 +272,6 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
---- !u!1001 &164432029
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7935044324593935843, guid: f821c60bd15fcea42b1845a0ae6302e8, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 7e99846cc81c4f64aadfd5d0f1448deb, type: 3}
-    - target: {fileID: 7935044324661287721, guid: f821c60bd15fcea42b1845a0ae6302e8, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 2a094321b6d800c4483b7b5e536d4a93, type: 2}
-    - target: {fileID: 7935044324661287721, guid: f821c60bd15fcea42b1845a0ae6302e8, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -6370922813164861757, guid: 2a094321b6d800c4483b7b5e536d4a93, type: 2}
-    - target: {fileID: 7935044324677805552, guid: f821c60bd15fcea42b1845a0ae6302e8, type: 3}
-      propertyPath: m_Name
-      value: ButtonCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935044324677805556, guid: f821c60bd15fcea42b1845a0ae6302e8, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935044324677805556, guid: f821c60bd15fcea42b1845a0ae6302e8, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935044324677805556, guid: f821c60bd15fcea42b1845a0ae6302e8, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935044324677805556, guid: f821c60bd15fcea42b1845a0ae6302e8, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935044324677805556, guid: f821c60bd15fcea42b1845a0ae6302e8, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935044324677805556, guid: f821c60bd15fcea42b1845a0ae6302e8, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935044324677805556, guid: f821c60bd15fcea42b1845a0ae6302e8, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935044324677805556, guid: f821c60bd15fcea42b1845a0ae6302e8, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935044324677805556, guid: f821c60bd15fcea42b1845a0ae6302e8, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935044324677805556, guid: f821c60bd15fcea42b1845a0ae6302e8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935044324677805556, guid: f821c60bd15fcea42b1845a0ae6302e8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935044324677805556, guid: f821c60bd15fcea42b1845a0ae6302e8, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935044324677805556, guid: f821c60bd15fcea42b1845a0ae6302e8, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935044324677805556, guid: f821c60bd15fcea42b1845a0ae6302e8, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935044324677805556, guid: f821c60bd15fcea42b1845a0ae6302e8, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935044324677805556, guid: f821c60bd15fcea42b1845a0ae6302e8, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935044324677805556, guid: f821c60bd15fcea42b1845a0ae6302e8, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935044324677805556, guid: f821c60bd15fcea42b1845a0ae6302e8, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935044324677805556, guid: f821c60bd15fcea42b1845a0ae6302e8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935044324677805556, guid: f821c60bd15fcea42b1845a0ae6302e8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935044324677805556, guid: f821c60bd15fcea42b1845a0ae6302e8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935044325151080518, guid: f821c60bd15fcea42b1845a0ae6302e8, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: b89be12551160d54083b990a354edd98, type: 3}
-    - target: {fileID: 7935044325411571983, guid: f821c60bd15fcea42b1845a0ae6302e8, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 7e99846cc81c4f64aadfd5d0f1448deb, type: 3}
-    - target: {fileID: 7935044325913987870, guid: f821c60bd15fcea42b1845a0ae6302e8, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 66ec524e2dbc5e342ad99268ae96d2f0, type: 3}
-    m_RemovedComponents:
-    - {fileID: 7935044324677805559, guid: f821c60bd15fcea42b1845a0ae6302e8, type: 3}
-  m_SourcePrefab: {fileID: 100100000, guid: f821c60bd15fcea42b1845a0ae6302e8, type: 3}
 --- !u!1 &332142375
 GameObject:
   m_ObjectHideFlags: 0
@@ -4714,6 +4592,8 @@ MonoBehaviour:
   TurnOffOnClick: 0
   ShouldClickAudioLoop: 0
   IsPulsating: 1
+  waitTime: 0
+  detectRelease: 0
   MouseDownClip: {fileID: 0}
   MouseUpClip: {fileID: 8300000, guid: ce3ed438c0a5ef640ba4a8aa35a7304e, type: 3}
   flyingObjRenderer: {fileID: 9080286830185273789}

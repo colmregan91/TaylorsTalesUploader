@@ -35,7 +35,6 @@ public class RigidbodyBehavior : TouchBase
 
     private void appleFallBehavior() // APPLE FALLING
     {
-        if (!IsPulsating) return;
         if (MouseDownClip) playMouseDownClip();
         // rb.gameObject.GetComponent<Collider2D>().enabled = true;
         rb.bodyType = RigidbodyType2D.Dynamic;
@@ -45,7 +44,6 @@ public class RigidbodyBehavior : TouchBase
 
     private void flyHatBehavior()
     {
-        if (!IsPulsating) return;
         if (MouseDownClip) playMouseDownClip();
         rb.bodyType = RigidbodyType2D.Dynamic;
         rb.gravityScale = 5f;

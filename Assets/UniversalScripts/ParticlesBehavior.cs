@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class ParticlesBehavior : TouchBase
 {
-    [SerializeField] private bool detectRelease;
     public ParticleBehaviors particleBehavior;
     [SerializeField] private ParticleSystem[] particleSystems;
  
@@ -43,7 +42,6 @@ public class ParticlesBehavior : TouchBase
 
     private void HandleParticleEmission()
     {
-        if (!IsPulsating) return;
         if (MouseDownClip) playMouseDownClip();
         foreach (ParticleSystem obj in particleSystems)
         {
@@ -53,6 +51,7 @@ public class ParticlesBehavior : TouchBase
     }
     private void Playparticle()
     {
+        if (MouseDownClip) playMouseDownClip();
         foreach (ParticleSystem obj in particleSystems)
         {
             obj.Play();
