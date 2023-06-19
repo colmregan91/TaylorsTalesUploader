@@ -2710,7 +2710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particle: {fileID: 3011044004422620907}
-  splash: {fileID: 8300000, guid: 3680924951a60d244a549e8212a162b6, type: 3}
+  clip: {fileID: 8300000, guid: 3680924951a60d244a549e8212a162b6, type: 3}
   source: {fileID: 1088738223863418296}
 --- !u!82 &1088738223863418296
 AudioSource:

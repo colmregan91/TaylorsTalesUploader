@@ -135,16 +135,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87872a813b15bd34e935b546f2f12b84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ps: {fileID: 2012108997477504624}
+  PulsateParticles: {fileID: 2012108997477504624}
   audioSource: {fileID: 350172079734135947}
   ShouldPulsate: 1
   TurnOffOnClick: 0
   ShouldClickAudioLoop: 0
   IsPulsating: 1
   waitTime: 3
+  detectRelease: 0
   MouseDownClip: {fileID: 8300000, guid: 3d62b596c0d85de4cad6e4568ba4c142, type: 3}
   MouseUpClip: {fileID: 0}
-  detectRelease: 0
   particleBehavior: 1
   particleSystems:
   - {fileID: 58673968363488352}
@@ -15393,7 +15393,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -546.9999, y: 192}
+  m_AnchoredPosition: {x: -546.99994, y: 192}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.04}
 --- !u!4 &4070160457480986298

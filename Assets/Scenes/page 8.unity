@@ -473,7 +473,7 @@ MonoBehaviour:
   TurnOffOnClick: 0
   ShouldClickAudioLoop: 0
   IsPulsating: 1
-  waitTime: 4
+  waitTime: 1
   detectRelease: 0
   MouseDownClip: {fileID: 8300000, guid: dfe3527383ad080409ac4aac5ad6b843, type: 3}
   MouseUpClip: {fileID: 0}
@@ -21990,7 +21990,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -37134,7 +37134,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: e3d4119c3e4597d4b90fc27f1419ca4b, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -37152,8 +37151,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 953963521
-  m_SortingLayer: 0
+  m_SortingLayerID: 2073416779
+  m_SortingLayer: 2
   m_SortingOrder: 5
   m_RenderMode: 1
   m_MeshDistribution: 0
@@ -37952,7 +37951,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

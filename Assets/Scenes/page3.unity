@@ -4223,7 +4223,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -4586,7 +4586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2f69d9181428bf4584f0e4084efb7a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ps: {fileID: 0}
+  PulsateParticles: {fileID: 0}
   audioSource: {fileID: 2080639641}
   ShouldPulsate: 0
   TurnOffOnClick: 0

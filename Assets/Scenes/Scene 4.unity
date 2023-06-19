@@ -9826,15 +9826,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87872a813b15bd34e935b546f2f12b84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ps: {fileID: 2012108997165263367}
+  PulsateParticles: {fileID: 2012108997165263367}
   audioSource: {fileID: 1190892686}
   ShouldPulsate: 1
   TurnOffOnClick: 0
   ShouldClickAudioLoop: 1
   IsPulsating: 1
+  waitTime: 0
+  detectRelease: 1
   MouseDownClip: {fileID: 8300000, guid: b130e9571a12cd14f8966782f87064d5, type: 3}
   MouseUpClip: {fileID: 0}
-  detectRelease: 1
   particleBehavior: 0
   particleSystems:
   - {fileID: 582158290}
@@ -20104,7 +20105,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

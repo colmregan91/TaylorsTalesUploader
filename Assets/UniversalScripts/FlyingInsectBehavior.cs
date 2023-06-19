@@ -6,13 +6,13 @@ public class FlyingInsectBehavior : MonoBehaviour
 {
     [SerializeField] private Transform pos1;
     [SerializeField] private Transform pos2;
-
     private Vector3 targetPos;
-    private float lerpTime;
     private float speed;
     Vector3 withFlipRot = new Vector3(0f, 180f, 0f);
     private bool isFlipped;
-    [SerializeField] private Transform DeadSpot;
+    [SerializeField] public Transform DeadSpot;
+    private bool isFlying = true;
+
     private void Awake()
     {
         swapPositions();
@@ -57,9 +57,14 @@ public class FlyingInsectBehavior : MonoBehaviour
     {
         speed = Random.Range(1f, 4f);
     }
+    public void SetisFlying(bool value)
+    {
+        isFlying = value;
+    }
 
     private void Update()
     {
+        if (!isFlying) return;
         transform.localPosition = Vector3.Lerp(transform.localPosition, targetPos, Time.deltaTime * speed);
 
         float dist = Vector3.Distance(transform.localPosition, targetPos);
@@ -79,6 +84,6 @@ public class FlyingInsectBehavior : MonoBehaviour
             speed = 1;
             transform.position = DeadSpot.position;
         }
-            
+
     }
 }

@@ -376,13 +376,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c31c322bf2e6f408313b2113399d21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ps: {fileID: 1665311237}
+  PulsateParticles: {fileID: 1665311237}
   audioSource: {fileID: 1665311236}
   ShouldPulsate: 1
   TurnOffOnClick: 1
   ShouldClickAudioLoop: 0
   IsPulsating: 1
   waitTime: 0
+  detectRelease: 0
   MouseDownClip: {fileID: 8300000, guid: 68ef48781fed6f54ea1a3d7ca2c99323, type: 3}
   MouseUpClip: {fileID: 0}
   rb: {fileID: 345492616}
@@ -753,13 +754,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c31c322bf2e6f408313b2113399d21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ps: {fileID: 212463667}
+  PulsateParticles: {fileID: 212463667}
   audioSource: {fileID: 212463666}
   ShouldPulsate: 1
   TurnOffOnClick: 1
   ShouldClickAudioLoop: 0
   IsPulsating: 1
   waitTime: 0
+  detectRelease: 0
   MouseDownClip: {fileID: 8300000, guid: 68ef48781fed6f54ea1a3d7ca2c99323, type: 3}
   MouseUpClip: {fileID: 0}
   rb: {fileID: 673132676}
@@ -1646,13 +1648,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c31c322bf2e6f408313b2113399d21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ps: {fileID: 510831438}
+  PulsateParticles: {fileID: 510831438}
   audioSource: {fileID: 510831437}
   ShouldPulsate: 1
   TurnOffOnClick: 1
   ShouldClickAudioLoop: 0
   IsPulsating: 1
   waitTime: 0
+  detectRelease: 0
   MouseDownClip: {fileID: 8300000, guid: 68ef48781fed6f54ea1a3d7ca2c99323, type: 3}
   MouseUpClip: {fileID: 0}
   rb: {fileID: 1802802500}
@@ -3411,13 +3414,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c31c322bf2e6f408313b2113399d21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ps: {fileID: 1616335592}
+  PulsateParticles: {fileID: 1616335592}
   audioSource: {fileID: 1616335591}
   ShouldPulsate: 1
   TurnOffOnClick: 1
   ShouldClickAudioLoop: 0
   IsPulsating: 1
   waitTime: 0
+  detectRelease: 0
   MouseDownClip: {fileID: 8300000, guid: 68ef48781fed6f54ea1a3d7ca2c99323, type: 3}
   MouseUpClip: {fileID: 0}
   rb: {fileID: 5507866}
@@ -3938,13 +3942,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b48a7d328510f2e419da76742c612a42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ps: {fileID: 0}
+  PulsateParticles: {fileID: 0}
   audioSource: {fileID: 1923384137}
   ShouldPulsate: 0
   TurnOffOnClick: 0
   ShouldClickAudioLoop: 0
   IsPulsating: 1
   waitTime: 1
+  detectRelease: 0
   MouseDownClip: {fileID: 8300000, guid: d0a1d1f14fbadab498574ac73fb99e2c, type: 3}
   MouseUpClip: {fileID: 0}
   flowers:
@@ -4149,7 +4154,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -4395,13 +4400,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c31c322bf2e6f408313b2113399d21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ps: {fileID: 2004919418}
+  PulsateParticles: {fileID: 2004919418}
   audioSource: {fileID: 2004919417}
   ShouldPulsate: 1
   TurnOffOnClick: 1
   ShouldClickAudioLoop: 0
   IsPulsating: 1
   waitTime: 0
+  detectRelease: 0
   MouseDownClip: {fileID: 8300000, guid: 68ef48781fed6f54ea1a3d7ca2c99323, type: 3}
   MouseUpClip: {fileID: 0}
   rb: {fileID: 1515100922}

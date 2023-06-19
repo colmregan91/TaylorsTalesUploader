@@ -576,11 +576,6 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: -8873199956340558725, guid: 42d3930fee548d94a94d50e78a7c02a7, type: 3}
   m_PrefabInstance: {fileID: 1042924501}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &1042924505 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 2012108996195696256, guid: 42d3930fee548d94a94d50e78a7c02a7, type: 3}
-  m_PrefabInstance: {fileID: 1042924501}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1042924506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -593,16 +588,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c31c322bf2e6f408313b2113399d21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ps: {fileID: 1042924505}
+  PulsateParticles: {fileID: 1042924509}
   audioSource: {fileID: 1042924504}
   ShouldPulsate: 1
   TurnOffOnClick: 1
   ShouldClickAudioLoop: 0
   IsPulsating: 1
+  waitTime: 0
+  detectRelease: 0
   MouseDownClip: {fileID: 8300000, guid: 263a184cba80df044a327a4952570b5d, type: 3}
   MouseUpClip: {fileID: 0}
   rb: {fileID: 1215045155}
   rigidBehavior: 1
+--- !u!198 &1042924509 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2012108996195696256, guid: 42d3930fee548d94a94d50e78a7c02a7, type: 3}
+  m_PrefabInstance: {fileID: 1042924501}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1207471647 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2884172575766331492, guid: dc1dcec55b5433c43842ca3fce0a1f7e, type: 3}
@@ -1276,7 +1278,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1380,16 +1382,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ec8746e52b22a4f949768801cf1414, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ps: {fileID: 1974539601}
+  PulsateParticles: {fileID: 1974539601}
   audioSource: {fileID: 1974539598}
   ShouldPulsate: 1
   TurnOffOnClick: 0
   ShouldClickAudioLoop: 0
   IsPulsating: 1
+  waitTime: 1.5
+  detectRelease: 0
   MouseDownClip: {fileID: 8300000, guid: 2ab1c082959488844a866ce7afa74d7a, type: 3}
   MouseUpClip: {fileID: 0}
   anim: {fileID: 240803555}
-  waitTime: 1.5
+  TriggerParam: AnimTrigger
 --- !u!82 &1974539598 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: -8873199956340558725, guid: 42d3930fee548d94a94d50e78a7c02a7, type: 3}
