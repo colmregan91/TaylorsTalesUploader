@@ -11,7 +11,13 @@ using System.Linq;
 public class EnvironmentUploader : BaseEditorWindow
 {
     public string Number;
+    private string pagePath;
 
+    public override void OnEnable()
+    {
+        base.OnEnable();
+        pagePath = $"{ASSETPATH}/Pages";
+    }
     private void OnGUI()
     {
 
@@ -44,7 +50,7 @@ public class EnvironmentUploader : BaseEditorWindow
 
             AssetBundleUtils.BuildBundles(EXPORTFOLDER);
 
-            string DirectoryPath = $"{ASSETPATH}/Page_{Number}";
+            string DirectoryPath = $"{pagePath}/Page_{Number}";
 
             if (!Directory.Exists(DirectoryPath))
             {

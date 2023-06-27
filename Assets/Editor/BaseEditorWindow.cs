@@ -83,6 +83,12 @@ public class BaseEditorWindow : EditorWindow
     public virtual void OnEnable()
     {
         ASSETPATH = $"{Application.persistentDataPath}/../TaylorsTalesAssets/ChickenAndTheFox";
+        string FactPath = $"{ASSETPATH}/Facts";
+        if (!Directory.Exists(ASSETPATH))
+        {
+            Directory.CreateDirectory(ASSETPATH);
+        }
+
     }
 
     protected string[] getFileswithoutMetaManifestFiles(string directoryPath)
@@ -96,7 +102,7 @@ public class BaseEditorWindow : EditorWindow
     protected string[] getJPGsorPNGs(string directoryPath) // should only accept png really
     {
         return Directory.GetFiles(directoryPath).Where(T => // get files in folder that arent manifest or meta files
- Path.GetExtension(T).ToLower().Equals(".jpg") ||
+ Path.GetExtension(T).Equals(".jpg") || Path.GetExtension(T).Equals(".JPG") || Path.GetExtension(T).Equals(".PNG") ||
  Path.GetExtension(T).Equals(".png")).ToArray();
     }
 
@@ -211,7 +217,7 @@ public class BaseEditorWindow : EditorWindow
     [MenuItem("EditorWindows/PageText uploader")]
     public static void ShowPageTextUploadWindow()
     {
-        GetWindow<PageTextUploader>("PageText uploader");
+        GetWindow<TextPageUploader>("PageText uploader");
     }
 
 
