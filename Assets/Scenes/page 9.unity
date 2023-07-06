@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.61886656, g: 0.8588988, b: 0.95696527, a: 1}
+  m_IndirectSpecularColor: {r: 0.61899006, g: 0.85967994, b: 0.95844704, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -870,8 +870,8 @@ MonoBehaviour:
   - {fileID: 799479515}
   - {fileID: 994866225}
   m_Bounds:
-    m_Center: {x: -0.13116515, y: -2.3791938, z: 0}
-    m_Extent: {x: 1.4050002, y: 3.1149998, z: 0}
+    m_Center: {x: -0.13116479, y: -2.3791935, z: 0}
+    m_Extent: {x: 1.4050006, y: 3.115, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -1313,8 +1313,8 @@ MonoBehaviour:
   - {fileID: 807975570}
   - {fileID: 1516917802}
   m_Bounds:
-    m_Center: {x: -0.13116515, y: -2.3791938, z: 0}
-    m_Extent: {x: 1.4050002, y: 3.1149998, z: 0}
+    m_Center: {x: -0.13116479, y: -2.3791935, z: 0}
+    m_Extent: {x: 1.4050006, y: 3.115, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -11278,8 +11278,8 @@ MonoBehaviour:
   - {fileID: 1347254157}
   - {fileID: 345944016}
   m_Bounds:
-    m_Center: {x: -0.13116515, y: -2.3791938, z: 0}
-    m_Extent: {x: 1.4050002, y: 3.1149998, z: 0}
+    m_Center: {x: -0.13116479, y: -2.3791935, z: 0}
+    m_Extent: {x: 1.4050006, y: 3.115, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -46022,8 +46022,8 @@ MonoBehaviour:
   - {fileID: 2005161489}
   - {fileID: 1851256322}
   m_Bounds:
-    m_Center: {x: -0.13116515, y: -2.3791938, z: 0}
-    m_Extent: {x: 1.4050002, y: 3.1149998, z: 0}
+    m_Center: {x: -0.13116479, y: -2.3791935, z: 0}
+    m_Extent: {x: 1.4050006, y: 3.115, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -66837,8 +66837,8 @@ MonoBehaviour:
   - {fileID: 2023928943}
   - {fileID: 480426414}
   m_Bounds:
-    m_Center: {x: -0.13116515, y: -2.3791938, z: 0}
-    m_Extent: {x: 1.4050002, y: 3.1149998, z: 0}
+    m_Center: {x: -0.13116479, y: -2.3791935, z: 0}
+    m_Extent: {x: 1.4050006, y: 3.115, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -67272,8 +67272,8 @@ MonoBehaviour:
   - {fileID: 1296973301}
   - {fileID: 1920262457}
   m_Bounds:
-    m_Center: {x: -0.13116515, y: -2.3791938, z: 0}
-    m_Extent: {x: 1.4050002, y: 3.1149998, z: 0}
+    m_Center: {x: -0.13116479, y: -2.3791935, z: 0}
+    m_Extent: {x: 1.4050006, y: 3.115, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -82058,8 +82058,8 @@ MonoBehaviour:
   - {fileID: 555238644}
   - {fileID: 476413523}
   m_Bounds:
-    m_Center: {x: -0.13116515, y: -2.3791938, z: 0}
-    m_Extent: {x: 1.4050002, y: 3.1149998, z: 0}
+    m_Center: {x: -0.13116479, y: -2.3791935, z: 0}
+    m_Extent: {x: 1.4050006, y: 3.115, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -82307,7 +82307,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 469062903
+  m_SortingLayerID: 1386650657
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &8257621421081338305
@@ -83105,8 +83105,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1386650657
-  m_SortingLayer: 1
+  m_SortingLayerID: 2073416779
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -6832020748505364778, guid: 8e2dbb193d7e5254e81c8b514cf9453e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -83150,8 +83150,8 @@ MonoBehaviour:
   - {fileID: 8257621421125214723}
   - {fileID: 8257621422540092133}
   m_Bounds:
-    m_Center: {x: -0.16732788, y: 0.031532764, z: 0}
-    m_Extent: {x: 3.8873305, y: 5.0148106, z: 0}
+    m_Center: {x: -0.16732788, y: 0.031532288, z: 0}
+    m_Extent: {x: 3.8873315, y: 5.014812, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -83556,8 +83556,8 @@ MonoBehaviour:
   - {fileID: 8257621421820884875}
   - {fileID: 8257621422260588215}
   m_Bounds:
-    m_Center: {x: -0.13116515, y: -2.3791938, z: 0}
-    m_Extent: {x: 1.4050002, y: 3.1149998, z: 0}
+    m_Center: {x: -0.13116479, y: -2.3791935, z: 0}
+    m_Extent: {x: 1.4050006, y: 3.115, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0

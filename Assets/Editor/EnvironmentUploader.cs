@@ -39,27 +39,22 @@ public class EnvironmentUploader : BaseEditorWindow
 
 
             var EnvironmentcanvasPath = GetPrefabPath(ENVIRONNMENTCANVAS, ENVCANVASPATH);
+            var InteractioncanvasPath = GetPrefabPath(INTERACTIONCANVAS, INTERACTIONSPATH);
 
             var bundleName = $"Page_{Number}_EnvironmentCanvas";
 
             AssetBundleUtils.AddToBundle(EnvironmentcanvasPath, bundleName);
-
+            AssetBundleUtils.AddToBundle(InteractioncanvasPath, bundleName);
 
             var SkyBoxPath = AssetDatabase.GetAssetPath(RenderSettings.skybox);
             AssetBundleUtils.AddToBundle(SkyBoxPath, bundleName);
 
             AssetBundleUtils.BuildBundles(EXPORTFOLDER);
 
-            string DirectoryPath = $"{pagePath}/Page_{Number}";
-
-            if (!Directory.Exists(DirectoryPath))
-            {
-                Directory.CreateDirectory(DirectoryPath);
-            }
 
 
 
-            string bundlePath = $"{DirectoryPath}/{bundleName}{bundleExtension}";
+            string bundlePath = $"{pagePath}/{bundleName}{bundleExtension}";
             if (File.Exists(bundlePath))
             {
                 File.Delete(bundlePath);

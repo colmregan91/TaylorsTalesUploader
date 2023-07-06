@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class AnimationBehavior : TouchBase
 {
+    [Tooltip("leave blank if multiple anims")]
     [SerializeField] private Animator anim;
+
+
+    [Tooltip("leave blank if single anims")]
+    [SerializeField] private Animator[] anims;
 
     private int triggerHash;
     [SerializeField] private string TriggerParam;
@@ -19,6 +24,18 @@ public class AnimationBehavior : TouchBase
     private void animBehavior()
     {
         if (MouseDownClip) playMouseDownClip();
-        anim.SetTrigger(triggerHash);
+
+        if (anim != null)
+        {
+            anim.SetTrigger(triggerHash);
+        }
+        else if (anims != null)
+        {
+            foreach (Animator an in anims)
+            {
+                an.SetTrigger(triggerHash);
+            }
+        }
+
     }
 }

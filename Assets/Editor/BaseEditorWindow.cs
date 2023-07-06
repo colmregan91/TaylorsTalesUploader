@@ -221,9 +221,9 @@ public class BaseEditorWindow : EditorWindow
     }
 
 
-    [MenuItem("EditorWindows/InteractionCanvas uploader")]
-    public static void ShowPInteractionsUploadWindow()
-    {
-        GetWindow<InteractionsUploader>("Interaction uploader");
-    }
+    //[MenuItem("EditorWindows/InteractionCanvas uploader")]
+    //public static void ShowPInteractionsUploadWindow()
+    //{
+    //    GetWindow<InteractionsUploader>("Interaction uploader");
+    //}
 }

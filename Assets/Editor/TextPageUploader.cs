@@ -18,7 +18,9 @@ public class TextPageUploader : BaseEditorWindow
     public override void OnEnable()
     {
         base.OnEnable();
-        TextFilePath = $"{ASSETPATH}/{pageFileName}{jsonExtension}";
+        string PagePath = $"{ASSETPATH}/Pages"; // TODO MOVE TO BASE, CREATE FACTS AND PAGES FOLDERS
+        CreateDirectoryIfDoesntExist(PagePath);
+        TextFilePath = $"{PagePath}/{pageFileName}{jsonExtension}";
         bool dirExists = File.Exists(TextFilePath);
 
         if (!dirExists)

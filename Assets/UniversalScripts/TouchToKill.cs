@@ -39,7 +39,7 @@ public class TouchToKill : MonoBehaviour
 
     private void ResetMosquito()
     {
-        if (rb == null) return;
+        if (rb == null || this==null) return; // this check as async dont cancel on quit
         rb.gravityScale = 0;
         isFalling = false;
         transform.position = flyingBehavior.DeadSpot.position;

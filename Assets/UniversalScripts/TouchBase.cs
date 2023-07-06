@@ -11,7 +11,7 @@ public abstract class TouchBase : MonoBehaviour
     [SerializeField] protected bool ShouldPulsate;
     [SerializeField] protected bool TurnOffOnClick;
     [SerializeField] protected bool ShouldClickAudioLoop;
-    [SerializeField] protected bool IsPulsating = true;
+    [SerializeField] public bool IsPulsating = true;
     [SerializeField] protected float waitTime;
     [SerializeField] protected bool detectRelease;
     protected Action MouseUpAsButBehavior;
@@ -20,6 +20,7 @@ public abstract class TouchBase : MonoBehaviour
     [SerializeField] protected AudioClip MouseDownClip;
     [SerializeField] protected AudioClip MouseUpClip;
 
+    public bool CanClick = true;
 
     public virtual void Awake()
     {
@@ -42,14 +43,16 @@ public abstract class TouchBase : MonoBehaviour
 
     }
 
-    private void SetParticleEmission(bool value)
+    public void SetParticleEmission(bool value)
     {
+        if (!CanClick) return;
+
         IsPulsating = value;
         if (PulsateParticles == null) return;
 
         var em = PulsateParticles.emission;
         em.enabled = value;
- 
+
     }
 
 
@@ -86,7 +89,7 @@ public abstract class TouchBase : MonoBehaviour
                 SetParticleEmission(false);
                 Invoke("setEmissionOnInvoke", waitTime);
             }
-    
+
         }
         if (detectRelease) SetParticleEmission(false);
 

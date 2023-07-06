@@ -12,7 +12,7 @@ public class FlowersManager : TouchBase
     private Vector3 pos;
     private Camera cam;
     private Queue<Animator> flowerQueue = new Queue<Animator>();
-    private float sizeMultiplier = 250;
+    private float sizeMultiplier = 110;
     private Queue<Animator> offQueue = new Queue<Animator>();
     private float clickTime;
 

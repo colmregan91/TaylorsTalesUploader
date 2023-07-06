@@ -1,0 +1,1422 @@
+fileFormatVersion: 2
+guid: e2e96c6b1b472e547b31afcef3be0590
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7906274130194651170
+    second: chicks shadows_0
+  - first:
+      213: -2202981881818849909
+    second: chicks shadows_1
+  - first:
+      213: -6853165693840707676
+    second: chicks shadows_2
+  - first:
+      213: -3445941454064786985
+    second: chicks shadows_3
+  - first:
+      213: -2733149792497461440
+    second: chicks shadows_4
+  - first:
+      213: -1759909515017893471
+    second: chicks shadows_5
+  - first:
+      213: 4779034483434618477
+    second: chicks shadows_6
+  - first:
+      213: 53783020317597886
+    second: chicks shadows_7
+  - first:
+      213: -2769890141823772357
+    second: chicks shadows_8
+  - first:
+      213: 173533190109582830
+    second: chicks shadows_9
+  - first:
+      213: 8543149065149442319
+    second: chicks shadows_10
+  - first:
+      213: 5562971967819333069
+    second: chicks shadows_11
+  - first:
+      213: 8177179277023437192
+    second: chicks shadows_12
+  - first:
+      213: -7201270870173832174
+    second: chicks shadows_13
+  - first:
+      213: -5740673358659387825
+    second: chicks shadows_14
+  - first:
+      213: -1238712103291599052
+    second: chicks shadows_15
+  - first:
+      213: -6198547388410996305
+    second: chicks shadows_16
+  - first:
+      213: -3502939139761356531
+    second: chicks shadows_17
+  - first:
+      213: -4446562167612649346
+    second: chicks shadows_18
+  - first:
+      213: -5501839126200608603
+    second: chicks shadows_19
+  - first:
+      213: 6684219644282969682
+    second: chicks shadows_20
+  - first:
+      213: -2864109503533580507
+    second: chicks shadows_21
+  - first:
+      213: 7105719435789306873
+    second: chicks shadows_22
+  - first:
+      213: -1212618143698912452
+    second: chicks shadows_23
+  - first:
+      213: -3947543206589944860
+    second: chicks shadows_24
+  - first:
+      213: -3822986427449987384
+    second: chicks shadows_25
+  - first:
+      213: -1315536670323207703
+    second: chicks shadows_26
+  - first:
+      213: 4268413932227360008
+    second: chicks shadows_27
+  - first:
+      213: 1102603618488647592
+    second: chicks shadows_28
+  - first:
+      213: 5452097516055685824
+    second: chicks shadows_29
+  - first:
+      213: 6073902034487593066
+    second: chicks shadows_30
+  - first:
+      213: 4690614469877238819
+    second: chicks shadows_31
+  - first:
+      213: -7093676107882976017
+    second: chicks shadows_32
+  - first:
+      213: 7973570469944529729
+    second: chicks shadows_33
+  - first:
+      213: -4351202906823563864
+    second: chicks shadows_34
+  - first:
+      213: 8109632797781790260
+    second: chicks shadows_35
+  - first:
+      213: -1915669730000323413
+    second: chicks shadows_36
+  - first:
+      213: -3345419301558155813
+    second: chicks shadows_37
+  - first:
+      213: -9055792894430986107
+    second: chicks shadows_38
+  - first:
+      213: 4185462332193319760
+    second: chicks shadows_39
+  - first:
+      213: 3165897476155181980
+    second: chicks shadows_40
+  - first:
+      213: 2731685986105351224
+    second: chicks shadows_41
+  - first:
+      213: 653904171810073756
+    second: chicks shadows_42
+  - first:
+      213: -6265605932589272765
+    second: chicks shadows_43
+  - first:
+      213: -7311107161538783039
+    second: chicks shadows_44
+  - first:
+      213: -2414568403350009828
+    second: chicks shadows_45
+  - first:
+      213: 1098672763041472763
+    second: chicks shadows_46
+  - first:
+      213: 3942034944862358219
+    second: chicks shadows_47
+  - first:
+      213: 5309340173733169007
+    second: chicks shadows_48
+  - first:
+      213: 8917685040797144762
+    second: chicks shadows_49
+  - first:
+      213: -7710365695127623237
+    second: chicks shadows_50
+  - first:
+      213: -3335900449577738761
+    second: chicks shadows_51
+  - first:
+      213: 4820767279593698439
+    second: chicks shadows_52
+  - first:
+      213: 4950440406354777008
+    second: chicks shadows_53
+  - first:
+      213: -4920440119102699837
+    second: chicks shadows_54
+  - first:
+      213: -1985922074276153782
+    second: chicks shadows_55
+  - first:
+      213: 7299639471555663783
+    second: chicks shadows_56
+  - first:
+      213: -8850361839621311128
+    second: chicks shadows_57
+  - first:
+      213: 3051351916584398206
+    second: chicks shadows_58
+  - first:
+      213: -3306260416100100132
+    second: chicks shadows_59
+  - first:
+      213: -7061668561437624998
+    second: chicks shadows_60
+  - first:
+      213: -107860129642163962
+    second: chicks shadows_61
+  - first:
+      213: -2302661865969573897
+    second: chicks shadows_62
+  - first:
+      213: 225301960556828874
+    second: chicks shadows_63
+  - first:
+      213: -3980079860693323850
+    second: chicks shadows_64
+  - first:
+      213: -2566017505256812463
+    second: chicks shadows_65
+  - first:
+      213: 2223115868610558139
+    second: chicks shadows_66
+  - first:
+      213: 4391110901638997871
+    second: chicks shadows_67
+  - first:
+      213: -2839519809924412179
+    second: chicks shadows_68
+  - first:
+      213: -4738349453267454575
+    second: chicks shadows_69
+  - first:
+      213: 7075864862218998848
+    second: chicks shadows_70
+  - first:
+      213: 4413517958846147631
+    second: chicks shadows_71
+  - first:
+      213: -3019752004950211016
+    second: chicks shadows_72
+  - first:
+      213: 8696667129794400574
+    second: chicks shadows_73
+  - first:
+      213: -2865655316325820256
+    second: chicks shadows_74
+  - first:
+      213: 3615780625560650589
+    second: chicks shadows_75
+  - first:
+      213: -2174653264803587476
+    second: chicks shadows_76
+  - first:
+      213: 2235647005633371998
+    second: chicks shadows_77
+  - first:
+      213: -2484373101723190616
+    second: chicks shadows_78
+  - first:
+      213: 1333381867829028553
+    second: chicks shadows_79
+  - first:
+      213: -9101733808866518121
+    second: chicks shadows_80
+  - first:
+      213: -5200297507901900047
+    second: chicks shadows_81
+  - first:
+      213: -8727826726676206932
+    second: chicks shadows_82
+  - first:
+      213: -4313325533206490632
+    second: chicks shadows_83
+  - first:
+      213: -6104319959779078465
+    second: chicks shadows_84
+  - first:
+      213: -5847002042637838569
+    second: chicks shadows_85
+  - first:
+      213: -2929773407906253867
+    second: chicks shadows_86
+  - first:
+      213: 7211431639391824885
+    second: chicks shadows_87
+  - first:
+      213: 3088351842934928058
+    second: chicks shadows_88
+  - first:
+      213: -8553082943426501731
+    second: chicks shadows_89
+  - first:
+      213: -6427793994032832147
+    second: chicks shadows_90
+  - first:
+      213: -1909533724256342173
+    second: chicks shadows_91
+  - first:
+      213: 9106854794561524781
+    second: chicks shadows_92
+  - first:
+      213: -6285715014794488908
+    second: chicks shadows_93
+  - first:
+      213: 4811133367167633852
+    second: chicks shadows_94
+  - first:
+      213: -3877634998482979383
+    second: chicks shadows_95
+  - first:
+      213: 5800571323097015891
+    second: chicks shadows_96
+  - first:
+      213: 4898819926150637814
+    second: chicks shadows_97
+  - first:
+      213: 1968452453653790243
+    second: chicks shadows_98
+  - first:
+      213: -1879292414338232887
+    second: chicks shadows_99
+  - first:
+      213: -6952734721992671125
+    second: chicks shadows_100
+  - first:
+      213: -38867013024237553
+    second: chicks shadows_101
+  - first:
+      213: 1722030248895260547
+    second: chicks shadows_102
+  - first:
+      213: -8782187176498715976
+    second: chicks shadows_103
+  - first:
+      213: -8742575993306265747
+    second: chicks shadows_104
+  - first:
+      213: -5306536753690743943
+    second: chicks shadows_105
+  - first:
+      213: -4369303940739759359
+    second: chicks shadows_106
+  - first:
+      213: 8951933421582048172
+    second: chicks shadows_107
+  - first:
+      213: 8829790246809407068
+    second: chicks shadows_108
+  - first:
+      213: -7836073856516289288
+    second: chicks shadows_109
+  - first:
+      213: -9114159044805131743
+    second: chicks shadows_110
+  - first:
+      213: -6028089062319624998
+    second: chicks shadows_111
+  - first:
+      213: -4532380569449313332
+    second: chicks shadows_112
+  - first:
+      213: 3249140567180028056
+    second: chicks shadows_113
+  - first:
+      213: -651165180094342165
+    second: chicks shadows_114
+  - first:
+      213: -6937527117835291620
+    second: chicks shadows_115
+  - first:
+      213: -4476229735889914233
+    second: chicks shadows_116
+  - first:
+      213: 7701945493990300686
+    second: chicks shadows_117
+  - first:
+      213: 3064560001032991332
+    second: chicks shadows_118
+  - first:
+      213: -7193795070248371400
+    second: chicks shadows_119
+  - first:
+      213: -4060230718350396526
+    second: chicks shadows_120
+  - first:
+      213: -89572078155620949
+    second: chicks shadows_121
+  - first:
+      213: -2679634470325601314
+    second: chicks shadows_122
+  - first:
+      213: 911524192814013357
+    second: chicks shadows_123
+  - first:
+      213: 2285657525444663826
+    second: chicks shadows_124
+  - first:
+      213: 508265218963839870
+    second: chicks shadows_125
+  - first:
+      213: -8317115751913754651
+    second: chicks shadows_126
+  - first:
+      213: -3387272471259278934
+    second: chicks shadows_127
+  - first:
+      213: -1482374059006674000
+    second: chicks shadows_128
+  - first:
+      213: 6754117264676194040
+    second: chicks shadows_129
+  - first:
+      213: 3203751150801349798
+    second: chicks shadows_130
+  - first:
+      213: -8210299995381635869
+    second: chicks shadows_131
+  - first:
+      213: 1084641042860750883
+    second: chicks shadows_132
+  - first:
+      213: 4074599983834516848
+    second: chicks shadows_133
+  - first:
+      213: -7994759503379811753
+    second: chicks shadows_134
+  - first:
+      213: -5485732440916742228
+    second: chicks shadows_135
+  - first:
+      213: -848583237726148715
+    second: chicks shadows_136
+  - first:
+      213: -891496443657474218
+    second: chicks shadows_137
+  - first:
+      213: 716082430713991906
+    second: chicks shadows_138
+  - first:
+      213: -5948352980889462473
+    second: chicks shadows_139
+  - first:
+      213: 8595326740734031807
+    second: chicks shadows_140
+  - first:
+      213: -3476463157704697433
+    second: chicks shadows_141
+  - first:
+      213: 2717325812144345769
+    second: chicks shadows_142
+  - first:
+      213: -806384779804380039
+    second: chicks shadows_143
+  - first:
+      213: 5242697668588692875
+    second: chicks shadows_144
+  - first:
+      213: -7780250962715257519
+    second: chicks shadows_145
+  - first:
+      213: -9080109876369268296
+    second: chicks shadows_146
+  - first:
+      213: -7869803001304173827
+    second: chicks shadows_147
+  - first:
+      213: -3415486037007325658
+    second: chicks shadows_148
+  - first:
+      213: -6270894459205943742
+    second: chicks shadows_149
+  - first:
+      213: 2739847944687281396
+    second: chicks shadows_150
+  - first:
+      213: -5264806285913264462
+    second: chicks shadows_151
+  - first:
+      213: -484741890079727585
+    second: chicks shadows_152
+  - first:
+      213: -9079042145530682048
+    second: chicks shadows_153
+  - first:
+      213: -4899315477690401389
+    second: chicks shadows_154
+  - first:
+      213: 8136464395798162345
+    second: chicks shadows_155
+  - first:
+      213: -4192055265856212120
+    second: chicks shadows_156
+  - first:
+      213: -3467723533889661820
+    second: chicks shadows_157
+  - first:
+      213: 7435414115515629359
+    second: chicks shadows_158
+  - first:
+      213: -2039074269211075519
+    second: chicks shadows_159
+  - first:
+      213: -4023467708691077056
+    second: chicks shadows_160
+  - first:
+      213: 778679985427644716
+    second: chicks shadows_161
+  - first:
+      213: 7545793423388513126
+    second: chicks shadows_162
+  - first:
+      213: -143080970995649688
+    second: chicks shadows_163
+  - first:
+      213: -5866647922478787725
+    second: chicks shadows_164
+  - first:
+      213: -6730411452218759071
+    second: chicks shadows_165
+  - first:
+      213: 1486520494897017906
+    second: chicks shadows_166
+  - first:
+      213: -8697491781987215853
+    second: chicks shadows_167
+  - first:
+      213: -3921916861984958154
+    second: chicks shadows_168
+  - first:
+      213: 7584502617390367524
+    second: chicks shadows_169
+  - first:
+      213: -7091923779888843886
+    second: chicks shadows_170
+  - first:
+      213: -6577616090064909955
+    second: chicks shadows_171
+  - first:
+      213: 8451391846349716067
+    second: chicks shadows_172
+  - first:
+      213: 1493225720441139041
+    second: chicks shadows_173
+  - first:
+      213: -2876666965751454355
+    second: chicks shadows_174
+  - first:
+      213: 4891545103086543429
+    second: chicks shadows_175
+  - first:
+      213: -4330025697435539883
+    second: chicks shadows_176
+  - first:
+      213: -1206664352244279699
+    second: chicks shadows_177
+  - first:
+      213: 3938392882865069627
+    second: chicks shadows_178
+  - first:
+      213: 6946968914127888492
+    second: chicks shadows_179
+  - first:
+      213: -296142099604006313
+    second: chicks shadows_180
+  - first:
+      213: -7242563367524617098
+    second: chicks shadows_181
+  - first:
+      213: 7729980590556174143
+    second: chicks shadows_182
+  - first:
+      213: 1534130474062907908
+    second: chicks shadows_183
+  - first:
+      213: 431150591838289679
+    second: chicks shadows_184
+  - first:
+      213: -3312107200407091841
+    second: chicks shadows_185
+  - first:
+      213: 8822600788252259260
+    second: chicks shadows_186
+  - first:
+      213: 4694425513085771431
+    second: chicks shadows_187
+  - first:
+      213: 8796776891970763414
+    second: chicks shadows_188
+  - first:
+      213: -8724613319796214205
+    second: chicks shadows_189
+  - first:
+      213: 1372354618599890269
+    second: chicks shadows_190
+  - first:
+      213: -3627179493654770638
+    second: chicks shadows_191
+  - first:
+      213: 4565650315857364310
+    second: chicks shadows_192
+  - first:
+      213: 6155972686910316210
+    second: chicks shadows_193
+  - first:
+      213: 4601467358983631192
+    second: chicks shadows_194
+  - first:
+      213: 146597080423573063
+    second: chicks shadows_195
+  - first:
+      213: 8863043261021583897
+    second: chicks shadows_196
+  - first:
+      213: 5246417527183056020
+    second: chicks shadows_197
+  - first:
+      213: 847239014586604938
+    second: chicks shadows_198
+  - first:
+      213: 4078716825478771134
+    second: chicks shadows_199
+  - first:
+      213: 1009106717372618488
+    second: chicks shadows_200
+  - first:
+      213: 2255195936483454689
+    second: chicks shadows_201
+  - first:
+      213: -2714537284216533038
+    second: chicks shadows_202
+  - first:
+      213: -793210705746596364
+    second: chicks shadows_203
+  - first:
+      213: 8986525161250800985
+    second: chicks shadows_204
+  - first:
+      213: 1828953247226267300
+    second: chicks shadows_205
+  - first:
+      213: -7207086750454594458
+    second: chicks shadows_206
+  - first:
+      213: -1033439671550091944
+    second: chicks shadows_207
+  - first:
+      213: -1610751492581994155
+    second: chicks shadows_208
+  - first:
+      213: -1225054320493116024
+    second: chicks shadows_209
+  - first:
+      213: -4372000588584835156
+    second: chicks shadows_210
+  - first:
+      213: 3796020297936033678
+    second: chicks shadows_211
+  - first:
+      213: -5994867088735130580
+    second: chicks shadows_212
+  - first:
+      213: -7114793400429946874
+    second: chicks shadows_213
+  - first:
+      213: -2525239925164257553
+    second: chicks shadows_214
+  - first:
+      213: 6951015403710753847
+    second: chicks shadows_215
+  - first:
+      213: -733352376668029819
+    second: chicks shadows_216
+  - first:
+      213: 1465876714872361468
+    second: chicks shadows_217
+  - first:
+      213: 8547972581181955133
+    second: chicks shadows_218
+  - first:
+      213: 734587831946745937
+    second: chicks shadows_219
+  - first:
+      213: 2032208612645671155
+    second: chicks shadows_220
+  - first:
+      213: 4369483565303884561
+    second: chicks shadows_221
+  - first:
+      213: -7000220106566282343
+    second: chicks shadows_222
+  - first:
+      213: 246621126197251853
+    second: chicks shadows_223
+  - first:
+      213: 9114983638636835453
+    second: chicks shadows_224
+  - first:
+      213: -4934835091088465395
+    second: chicks shadows_225
+  - first:
+      213: 1731826073257627026
+    second: chicks shadows_226
+  - first:
+      213: 7421064180492257790
+    second: chicks shadows_227
+  - first:
+      213: -8146395303195575740
+    second: chicks shadows_228
+  - first:
+      213: -8580527066436951949
+    second: chicks shadows_229
+  - first:
+      213: -3795217726179716070
+    second: chicks shadows_230
+  - first:
+      213: -5447078328970048350
+    second: chicks shadows_231
+  - first:
+      213: -6687286492764296613
+    second: chicks shadows_232
+  - first:
+      213: 4350860013731058075
+    second: chicks shadows_233
+  - first:
+      213: -8220543196179497441
+    second: chicks shadows_234
+  - first:
+      213: -3485575701130326033
+    second: chicks shadows_235
+  - first:
+      213: 2153955972427350566
+    second: chicks shadows_236
+  - first:
+      213: 508903863701360900
+    second: chicks shadows_237
+  - first:
+      213: -4620221871118184812
+    second: chicks shadows_238
+  - first:
+      213: -2647778600192353809
+    second: chicks shadows_239
+  - first:
+      213: -8779355836334019897
+    second: chicks shadows_240
+  - first:
+      213: 8197129086954974373
+    second: chicks shadows_241
+  - first:
+      213: -8918815858940329677
+    second: chicks shadows_242
+  - first:
+      213: -5513342382282841899
+    second: chicks shadows_243
+  - first:
+      213: -1315466055652419881
+    second: chicks shadows_244
+  - first:
+      213: -7353775954015438073
+    second: chicks shadows_245
+  - first:
+      213: -7053540918162309664
+    second: chicks shadows_246
+  - first:
+      213: -314386258242562243
+    second: chicks shadows_247
+  - first:
+      213: -6176823938393213277
+    second: chicks shadows_248
+  - first:
+      213: 5088271478786621976
+    second: chicks shadows_249
+  - first:
+      213: 5413673964505553231
+    second: chicks shadows_250
+  - first:
+      213: -6450683774437338508
+    second: chicks shadows_251
+  - first:
+      213: 7100399118820338545
+    second: chicks shadows_252
+  - first:
+      213: -8892513672978545846
+    second: chicks shadows_253
+  - first:
+      213: -4629966228117226595
+    second: chicks shadows_254
+  - first:
+      213: -4745167616381211443
+    second: chicks shadows_255
+  - first:
+      213: -5114350448968404442
+    second: chicks shadows_256
+  - first:
+      213: 7322854675342732541
+    second: chicks shadows_257
+  - first:
+      213: 8812304622099100059
+    second: chicks shadows_258
+  - first:
+      213: -6366105665672826422
+    second: chicks shadows_259
+  - first:
+      213: 7512629255678443094
+    second: chicks shadows_260
+  - first:
+      213: -6958307189566296390
+    second: chicks shadows_261
+  - first:
+      213: -8362070059060522294
+    second: chicks shadows_262
+  - first:
+      213: 5906645302296888960
+    second: chicks shadows_263
+  - first:
+      213: 148180903371295545
+    second: chicks shadows_264
+  - first:
+      213: 7850669613128688889
+    second: chicks shadows_265
+  - first:
+      213: 4282976055506854721
+    second: chicks shadows_266
+  - first:
+      213: -8576489535026952686
+    second: chicks shadows_267
+  - first:
+      213: -4790965492426140756
+    second: chicks shadows_268
+  - first:
+      213: -8856888937895718955
+    second: chicks shadows_269
+  - first:
+      213: -3032004314416755287
+    second: chicks shadows_270
+  - first:
+      213: -7815680658482945758
+    second: chicks shadows_271
+  - first:
+      213: 766619745009346679
+    second: chicks shadows_272
+  - first:
+      213: -1404554851577467585
+    second: chicks shadows_273
+  - first:
+      213: 7520371969560151481
+    second: chicks shadows_274
+  - first:
+      213: -828630812310708657
+    second: chicks shadows_275
+  - first:
+      213: 7177178553850913295
+    second: chicks shadows_276
+  - first:
+      213: -397338392850323789
+    second: chicks shadows_277
+  - first:
+      213: -4649425160076598493
+    second: chicks shadows_278
+  - first:
+      213: 6732965216429147937
+    second: chicks shadows_279
+  - first:
+      213: -8220437346091256960
+    second: chicks shadows_280
+  - first:
+      213: -6277154930404882555
+    second: chicks shadows_281
+  - first:
+      213: 5644169405034644524
+    second: chicks shadows_282
+  - first:
+      213: 4295723774068538449
+    second: chicks shadows_283
+  - first:
+      213: -3237077647551672304
+    second: chicks shadows_284
+  - first:
+      213: 6764589984551531399
+    second: chicks shadows_285
+  - first:
+      213: 4979108769365358469
+    second: chicks shadows_286
+  - first:
+      213: 6615005269287866334
+    second: chicks shadows_287
+  - first:
+      213: 2704086522608115521
+    second: chicks shadows_288
+  - first:
+      213: 8067923155015037883
+    second: chicks shadows_289
+  - first:
+      213: 1832924332850623033
+    second: chicks shadows_290
+  - first:
+      213: -8418713280156172337
+    second: chicks shadows_291
+  - first:
+      213: -3747934138326880110
+    second: chicks shadows_292
+  - first:
+      213: -6443870541588594586
+    second: chicks shadows_293
+  - first:
+      213: 7815567023760547296
+    second: chicks shadows_294
+  - first:
+      213: -5773525628942138416
+    second: chicks shadows_295
+  - first:
+      213: -8805348018541428847
+    second: chicks shadows_296
+  - first:
+      213: -2307863439884128139
+    second: chicks shadows_297
+  - first:
+      213: -2133541553615146017
+    second: chicks shadows_298
+  - first:
+      213: 2348506088976825538
+    second: chicks shadows_299
+  - first:
+      213: 7151011822608292669
+    second: chicks shadows_300
+  - first:
+      213: 8191780847277348500
+    second: chicks shadows_301
+  - first:
+      213: 2570007537039469188
+    second: chicks shadows_302
+  - first:
+      213: -6002573982189235004
+    second: chicks shadows_303
+  - first:
+      213: 9143274663495303038
+    second: chicks shadows_304
+  - first:
+      213: -7532622597803682315
+    second: chicks shadows_305
+  - first:
+      213: 2081253036710768139
+    second: chicks shadows_306
+  - first:
+      213: -8337348259750609025
+    second: chicks shadows_307
+  - first:
+      213: 5151145151071665139
+    second: chicks shadows_308
+  - first:
+      213: -8189908767638740777
+    second: chicks shadows_309
+  - first:
+      213: -1058575047229543284
+    second: chicks shadows_310
+  - first:
+      213: 3636880490380243838
+    second: chicks shadows_311
+  - first:
+      213: 8010457825656287300
+    second: chicks shadows_312
+  - first:
+      213: 3732914842799181303
+    second: chicks shadows_313
+  - first:
+      213: -3083764163354977467
+    second: chicks shadows_314
+  - first:
+      213: -3419428781305659562
+    second: chicks shadows_315
+  - first:
+      213: -3720695788390721966
+    second: chicks shadows_316
+  - first:
+      213: -1916105558514809918
+    second: chicks shadows_317
+  - first:
+      213: -9065864311374682480
+    second: chicks shadows_318
+  - first:
+      213: -4711812771923293497
+    second: chicks shadows_319
+  - first:
+      213: -5999640875886105467
+    second: chicks shadows_320
+  - first:
+      213: 8562690668402603973
+    second: chicks shadows_321
+  - first:
+      213: 1169654319359414885
+    second: chicks shadows_322
+  - first:
+      213: -2202912201687254085
+    second: chicks shadows_323
+  - first:
+      213: -5388728357787724812
+    second: chicks shadows_324
+  - first:
+      213: -4538300863381928494
+    second: chicks shadows_325
+  - first:
+      213: 47889012986064766
+    second: chicks shadows_326
+  - first:
+      213: -4714911510652615451
+    second: chicks shadows_327
+  - first:
+      213: 5904279469185661565
+    second: chicks shadows_328
+  - first:
+      213: -37328021931904014
+    second: chicks shadows_329
+  - first:
+      213: 5306364636798112839
+    second: chicks shadows_330
+  - first:
+      213: 6309588869841759996
+    second: chicks shadows_331
+  - first:
+      213: 2999784765046450237
+    second: chicks shadows_332
+  - first:
+      213: 3878885999618329991
+    second: chicks shadows_333
+  - first:
+      213: -1011846021097346941
+    second: chicks shadows_334
+  - first:
+      213: 3292149060586356532
+    second: chicks shadows_335
+  - first:
+      213: -842332779142982882
+    second: chicks shadows_336
+  - first:
+      213: -465615272882411518
+    second: chicks shadows_337
+  - first:
+      213: -4335886146529283463
+    second: chicks shadows_338
+  - first:
+      213: -3335298090547813170
+    second: chicks shadows_339
+  - first:
+      213: -6985164953051840064
+    second: chicks shadows_340
+  - first:
+      213: 7770861012514176897
+    second: chicks shadows_341
+  - first:
+      213: 6404393088828277253
+    second: chicks shadows_342
+  - first:
+      213: -2318663788956216295
+    second: chicks shadows_343
+  - first:
+      213: 8926195060072784261
+    second: chicks shadows_344
+  - first:
+      213: 3164006672061231221
+    second: chicks shadows_345
+  - first:
+      213: 2149803113406199460
+    second: chicks shadows_346
+  - first:
+      213: -6641721598052326695
+    second: chicks shadows_347
+  - first:
+      213: 2623235604006418766
+    second: chicks shadows_348
+  - first:
+      213: -6759773617388431769
+    second: chicks shadows_349
+  - first:
+      213: 4297977977052701777
+    second: chicks shadows_350
+  - first:
+      213: -5927527700835425324
+    second: chicks shadows_351
+  - first:
+      213: -2986310423304365737
+    second: chicks shadows_352
+  - first:
+      213: -1311474988101003204
+    second: chicks shadows_353
+  - first:
+      213: -831309491326467590
+    second: chicks shadows_354
+  - first:
+      213: -6113022813454158524
+    second: chicks shadows_355
+  - first:
+      213: 4693030501882882858
+    second: chicks shadows_356
+  - first:
+      213: -1392159893510277167
+    second: chicks shadows_357
+  - first:
+      213: -7068158151587626529
+    second: chicks shadows_358
+  - first:
+      213: 871248051127128753
+    second: chicks shadows_359
+  - first:
+      213: -2188092320011878256
+    second: chicks shadows_360
+  - first:
+      213: -2315120093634896218
+    second: chicks shadows_361
+  - first:
+      213: -7541720593236992200
+    second: chicks shadows_362
+  - first:
+      213: -3934933783544682429
+    second: chicks shadows_363
+  - first:
+      213: 1490328590977295928
+    second: chicks shadows_364
+  - first:
+      213: -1997791551630821805
+    second: chicks shadows_365
+  - first:
+      213: -6669869231879035321
+    second: chicks shadows_366
+  - first:
+      213: -6674457410165851688
+    second: chicks shadows_367
+  - first:
+      213: -1568031174032391885
+    second: chicks shadows_368
+  - first:
+      213: -2622712757943797970
+    second: chicks shadows_369
+  - first:
+      213: 7108348761704736715
+    second: chicks shadows_370
+  - first:
+      213: -6638785535424569676
+    second: chicks shadows_371
+  - first:
+      213: -7729310859763130286
+    second: chicks shadows_372
+  - first:
+      213: -2863143820862662301
+    second: chicks shadows_373
+  - first:
+      213: 1248380378892359648
+    second: chicks shadows_374
+  - first:
+      213: 1585717378988489485
+    second: chicks shadows_375
+  - first:
+      213: 6978646504702382023
+    second: chicks shadows_376
+  - first:
+      213: 4437071169206103487
+    second: chicks shadows_377
+  - first:
+      213: 2256247762434240146
+    second: chicks shadows_378
+  - first:
+      213: -8478105619874800269
+    second: chicks shadows_379
+  - first:
+      213: -1020132069840187582
+    second: chicks shadows_380
+  - first:
+      213: -7821050100220211897
+    second: chicks shadows_381
+  - first:
+      213: 2539946812360007576
+    second: chicks shadows_382
+  - first:
+      213: -2943629529493619136
+    second: chicks shadows_383
+  - first:
+      213: 3456671111385752263
+    second: chicks shadows_384
+  - first:
+      213: 7065476888709717851
+    second: chicks shadows_385
+  - first:
+      213: -4384653255331275841
+    second: chicks shadows_386
+  - first:
+      213: -281553035789510483
+    second: chicks shadows_387
+  - first:
+      213: -7936337713142649081
+    second: chicks shadows_388
+  - first:
+      213: 4181811666779485661
+    second: chicks shadows_389
+  - first:
+      213: 884785600279494681
+    second: chicks shadows_390
+  - first:
+      213: 4942941061777883731
+    second: chicks shadows_391
+  - first:
+      213: 4433001489746851806
+    second: chicks shadows_392
+  - first:
+      213: -6281510354906933502
+    second: chicks shadows_393
+  - first:
+      213: 6428369957043280812
+    second: chicks shadows_394
+  - first:
+      213: -8369316012715533665
+    second: chicks shadows_395
+  - first:
+      213: -8213774308627316096
+    second: chicks shadows_396
+  - first:
+      213: 6237988714534241738
+    second: chicks shadows_397
+  - first:
+      213: 6953346254399943486
+    second: chicks shadows_398
+  - first:
+      213: -3156731668869857008
+    second: chicks shadows_399
+  - first:
+      213: 1572173329520999003
+    second: chicks shadows_400
+  - first:
+      213: 3215099552835254853
+    second: chicks shadows_401
+  - first:
+      213: -6013054625552185521
+    second: chicks shadows_402
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: chicks shadows_0
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 217
+        width: 372
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228dc13ae6ab8bd60800000000000000
+      internalID: 7906274130194651170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicks shadows_1
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 255
+        width: 376
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8dd09f76af6d61e0800000000000000
+      internalID: -2202981881818849909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicks shadows_2
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 166
+        width: 391
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af2bbf6c1aa4e0a0800000000000000
+      internalID: -6853165693840707676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      chicks shadows_0: 7906274130194651170
+      chicks shadows_2: -6853165693840707676
+      chicks shadows_1: -2202981881818849909
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

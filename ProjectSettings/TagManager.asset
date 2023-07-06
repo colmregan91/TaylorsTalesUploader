@@ -8,6 +8,7 @@ TagManager:
   - InteractionCanvas
   - FxTemporaire
   - Skylark
+  - Title
   layers:
   - Default
   - TransparentFX

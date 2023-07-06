@@ -54,7 +54,7 @@ public class ParticlesBehavior : TouchBase
         if (MouseDownClip) playMouseDownClip();
         foreach (ParticleSystem obj in particleSystems)
         {
-            obj.Play();
+            obj.Play(true);
         }
     }
 
