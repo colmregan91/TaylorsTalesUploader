@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.Audio;
+
 public abstract class TouchBase : MonoBehaviour
 {
 
@@ -20,10 +22,11 @@ public abstract class TouchBase : MonoBehaviour
     [SerializeField] protected AudioClip MouseDownClip;
     [SerializeField] protected AudioClip MouseUpClip;
 
-    public bool CanClick = true;
 
     public virtual void Awake()
     {
+        SetMixerGroup();
+
         if (!ShouldPulsate)
         {
             if (PulsateParticles == null) return;
@@ -40,13 +43,25 @@ public abstract class TouchBase : MonoBehaviour
         {
             setAudioClickLoop(false);
         }
+    }
+
+    public void SetMixerGroup()
+    {
+        if (audioSource != null)
+        {
+            AudioMixer mixerGroup = Resources.Load<AudioMixer>("main");
+            var group = mixerGroup.FindMatchingGroups("TouchNoises")[0];
+            if (mixerGroup != null)
+            {
+                audioSource.outputAudioMixerGroup = group;
+            }
+
+        }
 
     }
 
     public void SetParticleEmission(bool value)
     {
-        if (!CanClick) return;
-
         IsPulsating = value;
         if (PulsateParticles == null) return;
 
@@ -77,8 +92,8 @@ public abstract class TouchBase : MonoBehaviour
         MouseDownbehavior?.Invoke();
         if (TurnOffOnClick)
         {
-            GetComponent<Collider2D>().enabled = false;
             SetParticleEmission(false);
+            enabled = false;
             return;
         }
         if (!ShouldPulsate) return; // if should pulsta is false and waittime not zero, do waitime check in inheritor 

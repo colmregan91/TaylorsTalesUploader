@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1989590606
+CRC: 608249740
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 2e0fe75f85c570f8cc56c21c55b61c4e
+    Hash: 2ad762f99c427684dda42ea17f630929
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 58238ae3a944229649eea24ba56a74d1
+    Hash: 32aa3a3c9ad347a6c7d88a3617d0a52f
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -18,6 +18,8 @@ ClassTypes:
 - Class: 28
   Script: {instanceID: 0}
 - Class: 48
+  Script: {instanceID: 0}
+- Class: 50
   Script: {instanceID: 0}
 - Class: 61
   Script: {instanceID: 0}
@@ -36,13 +38,13 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: 57c008f954fe54a8bb972de1018a2cb8, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: b0ec8746e52b22a4f949768801cf1414, type: 3}
+  Script: {fileID: 11500000, guid: d9d5196f33fb8674690212921a2748b7, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: 7d5dd2c36cc22f647aaf8608d0629bb7, type: 3}
+  Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7d5d7d61d592f1a43ba2257751e0f079, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 198
@@ -71,7 +73,7 @@ SerializeReferenceClassIdentifiers:
 - AssemblyName: UnityEngine.UI
   ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
 Assets:
+- Assets/Materials&Textures/FS003_Snowy.mat
 - Assets/Prefabs/EnvironmentCanvas/EnvironmentCanvas.prefab
-- Assets/Fantasy Skybox FREE/Panoramics/FS003/FS003_Snowy.mat
 - Assets/Prefabs/InteractionCanvas/InteractionCanvas.prefab
 Dependencies: []

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class PlayOnCollision : MonoBehaviour
 {
@@ -17,7 +18,19 @@ public class PlayOnCollision : MonoBehaviour
     //        played = true;
     //    }
     //}
+    private void Awake()
+    {
+        if (source != null)
+        {
+            AudioMixer mixerGroup = Resources.Load<AudioMixer>("main");
+            var group = mixerGroup.FindMatchingGroups("TouchNoises")[0];
+            if (mixerGroup != null)
+            {
+                source.outputAudioMixerGroup = group;
+            }
 
+        }
+    }
 
     [SerializeField] private AudioSource source;
     [SerializeField] private AudioClip clip;
@@ -50,6 +63,8 @@ public class PlayOnCollision : MonoBehaviour
     }
     private void playClipChomp()
     {
+        if (source.isPlaying) return;
+
         source.PlayOneShot(clip);
     }
 }

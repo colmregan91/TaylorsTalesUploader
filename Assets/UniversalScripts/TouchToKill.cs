@@ -1,21 +1,23 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.UI;
-public class TouchToKill : MonoBehaviour
+public class TouchToKill : TouchBase
 {
     [SerializeField] private Animator anim;
-    [SerializeField] private AudioSource source;
-    [SerializeField] private AudioClip clip;
     [SerializeField] private FlyingInsectBehavior flyingBehavior;
     [SerializeField] private ParticleSystem particles;
     [SerializeField] private Rigidbody2D rb;
     private bool isFalling;
 
-    private void OnMouseDown()
+    protected override Action MouseDownbehavior => kill;
+
+    private void kill()
     {
-        source.PlayOneShot(clip);
+        if (MouseDownClip) playMouseDownClip();
         anim.speed = 0;
         flyingBehavior.SetisFlying(false);
         particles.Play(true);
@@ -50,3 +52,5 @@ public class TouchToKill : MonoBehaviour
 
 
 }
+
+

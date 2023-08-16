@@ -615,7 +615,6 @@ GameObject:
   - component: {fileID: 307611318}
   - component: {fileID: 307611317}
   - component: {fileID: 307611316}
-  - component: {fileID: 307611315}
   - component: {fileID: 307611314}
   m_Layer: 7
   m_Name: mosquito (5)
@@ -661,108 +660,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9d5196f33fb8674690212921a2748b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PulsateParticles: {fileID: 0}
+  audioSource: {fileID: 8257621421466412421}
+  ShouldPulsate: 0
+  TurnOffOnClick: 0
+  ShouldClickAudioLoop: 0
+  IsPulsating: 1
+  waitTime: 0
+  detectRelease: 0
+  MouseDownClip: {fileID: 8300000, guid: e9ee08edbaff5384eab6f2dd4b694131, type: 3}
+  MouseUpClip: {fileID: 0}
   anim: {fileID: 307611319}
-  source: {fileID: 307611315}
-  clip: {fileID: 8300000, guid: 3a8a94653965f67469a53031453b5d06, type: 3}
   flyingBehavior: {fileID: 307611316}
   particles: {fileID: 2007707771}
   rb: {fileID: 307611317}
---- !u!82 &307611315
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 307611312}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -6490682785608389607, guid: 439c4ca7b43373a49a739838abd8b74d, type: 2}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!114 &307611316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1058,7 +969,6 @@ GameObject:
   - component: {fileID: 335475994}
   - component: {fileID: 335475993}
   - component: {fileID: 335475992}
-  - component: {fileID: 335475991}
   - component: {fileID: 335475990}
   m_Layer: 7
   m_Name: mosquito (4)
@@ -1104,108 +1014,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9d5196f33fb8674690212921a2748b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PulsateParticles: {fileID: 0}
+  audioSource: {fileID: 8257621421466412421}
+  ShouldPulsate: 0
+  TurnOffOnClick: 0
+  ShouldClickAudioLoop: 0
+  IsPulsating: 1
+  waitTime: 0
+  detectRelease: 0
+  MouseDownClip: {fileID: 8300000, guid: 3a8a94653965f67469a53031453b5d06, type: 3}
+  MouseUpClip: {fileID: 0}
   anim: {fileID: 335475995}
-  source: {fileID: 335475991}
-  clip: {fileID: 8300000, guid: 3a8a94653965f67469a53031453b5d06, type: 3}
   flyingBehavior: {fileID: 335475992}
   particles: {fileID: 871026050}
   rb: {fileID: 335475993}
---- !u!82 &335475991
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 335475988}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -6490682785608389607, guid: 439c4ca7b43373a49a739838abd8b74d, type: 2}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!114 &335475992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11023,7 +10845,6 @@ GameObject:
   - component: {fileID: 464551439}
   - component: {fileID: 464551438}
   - component: {fileID: 464551437}
-  - component: {fileID: 464551436}
   - component: {fileID: 464551435}
   m_Layer: 7
   m_Name: mosquito (6)
@@ -11069,108 +10890,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9d5196f33fb8674690212921a2748b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PulsateParticles: {fileID: 0}
+  audioSource: {fileID: 8257621421466412421}
+  ShouldPulsate: 0
+  TurnOffOnClick: 0
+  ShouldClickAudioLoop: 0
+  IsPulsating: 1
+  waitTime: 0
+  detectRelease: 0
+  MouseDownClip: {fileID: 8300000, guid: e9ee08edbaff5384eab6f2dd4b694131, type: 3}
+  MouseUpClip: {fileID: 0}
   anim: {fileID: 464551440}
-  source: {fileID: 464551436}
-  clip: {fileID: 8300000, guid: 3a8a94653965f67469a53031453b5d06, type: 3}
   flyingBehavior: {fileID: 464551437}
   particles: {fileID: 2074772355}
   rb: {fileID: 464551438}
---- !u!82 &464551436
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 464551433}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -6490682785608389607, guid: 439c4ca7b43373a49a739838abd8b74d, type: 2}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!114 &464551437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45767,7 +45500,6 @@ GameObject:
   - component: {fileID: 1064653486}
   - component: {fileID: 1064653485}
   - component: {fileID: 1064653484}
-  - component: {fileID: 1064653483}
   - component: {fileID: 1064653482}
   m_Layer: 7
   m_Name: mosquito (3)
@@ -45813,108 +45545,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9d5196f33fb8674690212921a2748b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PulsateParticles: {fileID: 0}
+  audioSource: {fileID: 8257621421466412421}
+  ShouldPulsate: 0
+  TurnOffOnClick: 0
+  ShouldClickAudioLoop: 0
+  IsPulsating: 1
+  waitTime: 0
+  detectRelease: 0
+  MouseDownClip: {fileID: 8300000, guid: 3a8a94653965f67469a53031453b5d06, type: 3}
+  MouseUpClip: {fileID: 0}
   anim: {fileID: 1064653487}
-  source: {fileID: 1064653483}
-  clip: {fileID: 8300000, guid: 3a8a94653965f67469a53031453b5d06, type: 3}
   flyingBehavior: {fileID: 1064653484}
   particles: {fileID: 677815261}
   rb: {fileID: 1064653485}
---- !u!82 &1064653483
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1064653480}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -6490682785608389607, guid: 439c4ca7b43373a49a739838abd8b74d, type: 2}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!114 &1064653484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66582,7 +66226,6 @@ GameObject:
   - component: {fileID: 1922906283}
   - component: {fileID: 1922906282}
   - component: {fileID: 1922906281}
-  - component: {fileID: 1922906280}
   - component: {fileID: 1922906279}
   m_Layer: 7
   m_Name: mosquito (8)
@@ -66628,108 +66271,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9d5196f33fb8674690212921a2748b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PulsateParticles: {fileID: 0}
+  audioSource: {fileID: 8257621421466412421}
+  ShouldPulsate: 0
+  TurnOffOnClick: 0
+  ShouldClickAudioLoop: 0
+  IsPulsating: 1
+  waitTime: 0
+  detectRelease: 0
+  MouseDownClip: {fileID: 8300000, guid: e9ee08edbaff5384eab6f2dd4b694131, type: 3}
+  MouseUpClip: {fileID: 0}
   anim: {fileID: 1922906284}
-  source: {fileID: 1922906280}
-  clip: {fileID: 8300000, guid: 3a8a94653965f67469a53031453b5d06, type: 3}
   flyingBehavior: {fileID: 1922906281}
   particles: {fileID: 562643187}
   rb: {fileID: 1922906282}
---- !u!82 &1922906280
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1922906277}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -6490682785608389607, guid: 439c4ca7b43373a49a739838abd8b74d, type: 2}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!114 &1922906281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67017,7 +66572,6 @@ GameObject:
   - component: {fileID: 1972597807}
   - component: {fileID: 1972597806}
   - component: {fileID: 1972597805}
-  - component: {fileID: 1972597804}
   - component: {fileID: 1972597803}
   m_Layer: 7
   m_Name: mosquito (2)
@@ -67063,108 +66617,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9d5196f33fb8674690212921a2748b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PulsateParticles: {fileID: 0}
+  audioSource: {fileID: 8257621421466412421}
+  ShouldPulsate: 0
+  TurnOffOnClick: 0
+  ShouldClickAudioLoop: 0
+  IsPulsating: 1
+  waitTime: 0
+  detectRelease: 0
+  MouseDownClip: {fileID: 8300000, guid: 3a8a94653965f67469a53031453b5d06, type: 3}
+  MouseUpClip: {fileID: 0}
   anim: {fileID: 1972597808}
-  source: {fileID: 1972597804}
-  clip: {fileID: 8300000, guid: 3a8a94653965f67469a53031453b5d06, type: 3}
   flyingBehavior: {fileID: 1972597805}
   particles: {fileID: 1710040494}
   rb: {fileID: 1972597806}
---- !u!82 &1972597804
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1972597801}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -6490682785608389607, guid: 439c4ca7b43373a49a739838abd8b74d, type: 2}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!114 &1972597805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81803,7 +81269,6 @@ GameObject:
   - component: {fileID: 2145620255}
   - component: {fileID: 2145620254}
   - component: {fileID: 2145620253}
-  - component: {fileID: 2145620252}
   - component: {fileID: 2145620251}
   m_Layer: 7
   m_Name: mosquito (7)
@@ -81849,108 +81314,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9d5196f33fb8674690212921a2748b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PulsateParticles: {fileID: 0}
+  audioSource: {fileID: 8257621421466412421}
+  ShouldPulsate: 0
+  TurnOffOnClick: 0
+  ShouldClickAudioLoop: 0
+  IsPulsating: 1
+  waitTime: 0
+  detectRelease: 0
+  MouseDownClip: {fileID: 8300000, guid: e9ee08edbaff5384eab6f2dd4b694131, type: 3}
+  MouseUpClip: {fileID: 0}
   anim: {fileID: 2145620256}
-  source: {fileID: 2145620252}
-  clip: {fileID: 8300000, guid: 3a8a94653965f67469a53031453b5d06, type: 3}
   flyingBehavior: {fileID: 2145620253}
   particles: {fileID: 2035640864}
   rb: {fileID: 2145620254}
---- !u!82 &2145620252
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2145620249}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -6490682785608389607, guid: 439c4ca7b43373a49a739838abd8b74d, type: 2}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!114 &2145620253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82817,6 +82194,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8257621421466412420}
+  - component: {fileID: 8257621421466412421}
   m_Layer: 7
   m_Name: mossys
   m_TagString: Untagged
@@ -82852,6 +82230,102 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!82 &8257621421466412421
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8257621421466412419}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &8257621421504198795
 GameObject:
   m_ObjectHideFlags: 0
@@ -83502,7 +82976,6 @@ GameObject:
   - component: {fileID: 8257621422144752047}
   - component: {fileID: 8257621422144752032}
   - component: {fileID: 8257621422144752048}
-  - component: {fileID: 8257621422144752050}
   - component: {fileID: 8257621422144752051}
   m_Layer: 7
   m_Name: mosquito (1)
@@ -83679,102 +83152,6 @@ MonoBehaviour:
   pos1: {fileID: 8257621421364926094}
   pos2: {fileID: 8257621422671704569}
   DeadSpot: {fileID: 1964363332}
---- !u!82 &8257621422144752050
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8257621422144752041}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -6490682785608389607, guid: 439c4ca7b43373a49a739838abd8b74d, type: 2}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!114 &8257621422144752051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83787,9 +83164,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9d5196f33fb8674690212921a2748b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PulsateParticles: {fileID: 0}
+  audioSource: {fileID: 8257621421466412421}
+  ShouldPulsate: 0
+  TurnOffOnClick: 0
+  ShouldClickAudioLoop: 0
+  IsPulsating: 1
+  waitTime: 0
+  detectRelease: 0
+  MouseDownClip: {fileID: 8300000, guid: 3a8a94653965f67469a53031453b5d06, type: 3}
+  MouseUpClip: {fileID: 0}
   anim: {fileID: 8257621422144752043}
-  source: {fileID: 8257621422144752050}
-  clip: {fileID: 8300000, guid: 3a8a94653965f67469a53031453b5d06, type: 3}
   flyingBehavior: {fileID: 8257621422144752048}
   particles: {fileID: 430496669}
   rb: {fileID: 8257621422144752032}
