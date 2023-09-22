@@ -120,66 +120,6 @@ public class FactUploader : BaseEditorWindow
         return specialList.ToArray();
     }
 
-    //private FactList CreateFactsForLanguage(string[] specialList, int index)
-    //{
-    //    var factData = GetFacts(index);
-
-    //    for (int i = 0; i < specialList.Length; i++)
-    //    {
-    //        try
-    //        {
-    //            string word = specialList[i].ToLower();
-    //            LocalisedItem factInfo = factData.items.First(T => T.key.Equals(word));
-    //            Fact newFact = new Fact(word, factInfo.value);
-    //            factList.Add(newFact);
-    //        }
-    //        catch (Exception localVariable)
-    //        {
-    //            Debug.LogWarning($"Need configuring for {TriggerWord}, {localVariable}");
-    //        }
-
-    //        CreateDirectoryIfDoesntExist($"{FACTIMAGES}/{TriggerWord}");
-    //    }
-
-    //}
-
-
-
-
-
-
-
-    //    for (int i = 0; i < languagedata.items.Length; i++)
-    //{
-    //    var specials = languagedata.items[i].value.Split(' ', '\n', '.', '“', '”', ',', '?');
-    //    for (int j = 0; j < specials.Length; j++)
-    //    {
-
-    //        if (specials[j].Contains("<color=red>"))
-    //        {
-    //            var word = specials[j];
-    //            var abb = word.Replace("<color=red>", "");
-    //            var TriggerWord = abb.Replace("</color=red>", "");
-    //            //        Debug.Log(word);
-
-    //            try
-    //            {
-    //                LocalisedItem factInfo = factData.items.First(T => T.key.Equals(TriggerWord.ToLower()));
-    //                Fact newFact = new Fact(TriggerWord.ToLower(), factInfo.value);
-    //                factList.Add(newFact);
-    //            }
-    //            catch (Exception localVariable)
-    //            {
-    //                Debug.LogWarning($"Need configuring for {TriggerWord}, {localVariable}");
-    //            }
-
-
-
-    //            CreateDirectoryIfDoesntExist($"{FACTIMAGES}/{TriggerWord}");
-
-
-    //        }
-    //    }
     private void DisplayFacts()
     {
         factList.Clear();

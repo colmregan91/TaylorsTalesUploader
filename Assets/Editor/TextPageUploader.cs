@@ -10,10 +10,10 @@ public class TextPageUploader : BaseEditorWindow
     public int Number;
     public PageTextList PageTextData;
 
-    private const string pageFileName = "JSONPageData";
+    protected const string pageFileName = "JSONPageData";
 
-    private Page curPage;
-    private string TextFilePath;
+    protected Page curPage;
+    protected string TextFilePath;
 
     public override void OnEnable()
     {
@@ -33,7 +33,7 @@ public class TextPageUploader : BaseEditorWindow
 
     }
 
-    private bool contains(int number)
+    protected bool contains(int number)
     {
         for (int i = 0; i < PageTextData.pageTexts.Count; i++)
         {
@@ -42,7 +42,7 @@ public class TextPageUploader : BaseEditorWindow
 
         return false;
     }
-    private void OnGUI()
+    public virtual void OnGUI()
     {
         Number = EditorGUILayout.IntField("Enter Page number :", Number);
 
@@ -97,4 +97,5 @@ public class TextPageUploader : BaseEditorWindow
 
         }
     }
+
 }

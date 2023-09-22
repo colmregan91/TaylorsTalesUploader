@@ -149,29 +149,33 @@ public class BaseEditorWindow : EditorWindow
 
     }
 
-    protected void DisplayLanguageButtons()
+    protected void DisplayLanguageButtons(Action callback = null)
     {
 
         EditorGUILayout.BeginHorizontal();
         if (GUILayout.Button("English"))
         {
             CurrentLanguageIndex = Languages.English;
+            callback?.Invoke();
             Repaint();
         }
 
         if (GUILayout.Button("Irish"))
         {
             CurrentLanguageIndex = Languages.Irish;
+            callback?.Invoke();
             Repaint();
         }
         if (GUILayout.Button("French"))
         {
             CurrentLanguageIndex = Languages.French;
+            callback?.Invoke();
             Repaint();
         }
         if (GUILayout.Button("Spanish"))
         {
             CurrentLanguageIndex = Languages.Spanish;
+            callback?.Invoke();
             Repaint();
         }
         EditorGUILayout.EndHorizontal();
@@ -220,6 +224,17 @@ public class BaseEditorWindow : EditorWindow
         GetWindow<TextPageUploader>("PageText uploader");
     }
 
+    [MenuItem("EditorWindows/WordListGenerator")]
+    public static void ShowWordListGeneratorWindow()
+    {
+        GetWindow<WordListGenerator>("Word List Generator");
+    }
+
+    [MenuItem("EditorWindows/SentenceListGenerator")]
+    public static void ShowSentenceListGeneratorWindow()
+    {
+        GetWindow<SentenceListGenerator>("Sentence List Generator");
+    }
 
     //[MenuItem("EditorWindows/InteractionCanvas uploader")]
     //public static void ShowPInteractionsUploadWindow()
