@@ -22,7 +22,7 @@ public class EnvironmentUploader : BaseEditorWindow
     {
 
         var entry = EditorGUILayout.TextField("Enter Page number :", Number);
-        GUILayout.Label("Folder location : " + pagePath);
+        GUILayout.Label("Folder location : " + EXPORTFOLDER);
         Number = entry;
 
         if (Number == "") return;
@@ -55,18 +55,18 @@ public class EnvironmentUploader : BaseEditorWindow
 
 
 
-            string bundlePath = $"{pagePath}/{bundleName}{bundleExtension}";
-            if (File.Exists(bundlePath))
-            {
-                File.Delete(bundlePath);
-            }
+            //string bundlePath = $"{pagePath}/{bundleName}{bundleExtension}";
+            //if (File.Exists(bundlePath))
+            //{
+            //    File.Delete(bundlePath);
+            //}
 
             AssetDatabase.Refresh();
 
 
-            string source = Path.GetFullPath($"{EXPORTFOLDER}/{bundleName}{bundleExtension}");
+       //     string source = Path.GetFullPath($"{EXPORTFOLDER}/{bundleName}{bundleExtension}");
 
-            MoveFiles(source, bundlePath);
+           // MoveFiles(source, bundlePath);
 
             AssetDatabase.Refresh();
         }
