@@ -22,6 +22,7 @@ public class EnvironmentUploader : BaseEditorWindow
     {
 
         var entry = EditorGUILayout.TextField("Enter Page number :", Number);
+        GUILayout.Label("Folder location : " + pagePath);
         Number = entry;
 
         if (Number == "") return;
