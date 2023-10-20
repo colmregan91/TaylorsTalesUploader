@@ -42,7 +42,7 @@ public class EnvironmentUploader : BaseEditorWindow
             var EnvironmentcanvasPath = GetPrefabPath(ENVIRONNMENTCANVAS, ENVCANVASPATH);
             var InteractioncanvasPath = GetPrefabPath(INTERACTIONCANVAS, INTERACTIONSPATH);
 
-            var bundleName = $"Page_{Number}_EnvironmentCanvas";
+            var bundleName = $"Page_{Number}_environmentcanvas";
 
             AssetBundleUtils.AddToBundle(EnvironmentcanvasPath, bundleName);
             AssetBundleUtils.AddToBundle(InteractioncanvasPath, bundleName);
