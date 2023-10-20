@@ -81,7 +81,7 @@ public class BaseEditorWindow : EditorWindow
     }
 
     public virtual void OnEnable()
-    {
+    {Debug.Log(ASSETPATH);
         ASSETPATH = $"{Application.persistentDataPath}/../TaylorsTalesAssets/ChickenAndTheFox";
         string FactPath = $"{ASSETPATH}/Facts";
         if (!Directory.Exists(ASSETPATH))

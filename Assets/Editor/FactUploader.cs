@@ -104,7 +104,7 @@ public class FactUploader : BaseEditorWindow
 
         for (int i = 0; i < languagedata.items.Length; i++)
         {
-            var specials = languagedata.items[i].value.Split(' ', '\n', '.', '“', '”', ',', '?');
+            var specials = languagedata.items[i].value.Split(' ', '\n', '.', 'â€œ', 'â€', ',', '?');
             for (int j = 0; j < specials.Length; j++)
             {
                 if (specials[j].Contains("<color=red>"))
