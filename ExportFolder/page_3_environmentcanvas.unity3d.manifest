@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 4275623695
+CRC: 2079622274
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 683be66365e2b353199eabcf9fbf1167
+    Hash: 685e1a4724b21f3ef289fa16df5a765d
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 02ae0a24e6700c77e38d99c330fa4af1
+    Hash: 3a261ba0241067e99aa0108be496bfc1
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -21,11 +21,7 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 50
   Script: {instanceID: 0}
-- Class: 58
-  Script: {instanceID: 0}
 - Class: 61
-  Script: {instanceID: 0}
-- Class: 62
   Script: {instanceID: 0}
 - Class: 74
   Script: {instanceID: 0}
@@ -37,25 +33,19 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 95
   Script: {instanceID: 0}
-- Class: 114
-  Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+- Class: 96
+  Script: {instanceID: 0}
 - Class: 114
   Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: 57c008f954fe54a8bb972de1018a2cb8, type: 3}
+  Script: {fileID: 11500000, guid: 7d5d7d61d592f1a43ba2257751e0f079, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: b0ec8746e52b22a4f949768801cf1414, type: 3}
+  Script: {fileID: 11500000, guid: d2f69d9181428bf4584f0e4084efb7a3, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: 7d5dd2c36cc22f647aaf8608d0629bb7, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 19a3ef3f5215c044eaf6bf978845cdff, type: 3}
+  Script: {fileID: 11500000, guid: 3bea04db0c7da374eb411951eed1d5ea, type: 3}
 - Class: 115
-  Script: {instanceID: 0}
-- Class: 198
-  Script: {instanceID: 0}
-- Class: 199
   Script: {instanceID: 0}
 - Class: 212
   Script: {instanceID: 0}
@@ -79,7 +69,7 @@ SerializeReferenceClassIdentifiers:
 - AssemblyName: UnityEngine.UI
   ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
 Assets:
-- Assets/Materials&Textures/FS003_Snowy.mat
-- Assets/Prefabs/EnvironmentCanvas/Envirnoment Canvas.prefab
+- Assets/Prefabs/EnvironmentCanvas/EnvironmentCanvas.prefab
+- Assets/Fantasy Skybox FREE/Panoramics/FS002/FS002_Sunset.mat
 - Assets/Prefabs/InteractionCanvas/InteractionCanvas.prefab
 Dependencies: []

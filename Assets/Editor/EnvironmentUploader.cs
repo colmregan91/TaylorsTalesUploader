@@ -22,7 +22,7 @@ public class EnvironmentUploader : BaseEditorWindow
     {
 
         var entry = EditorGUILayout.TextField("Enter Page number :", Number);
-        GUILayout.Label("Folder location : " + EXPORTFOLDER);
+        GUILayout.Label("Folder location : " + pagePath);
         Number = entry;
 
         if (Number == "") return;
@@ -42,7 +42,7 @@ public class EnvironmentUploader : BaseEditorWindow
             var EnvironmentcanvasPath = GetPrefabPath(ENVIRONNMENTCANVAS, ENVCANVASPATH);
             var InteractioncanvasPath = GetPrefabPath(INTERACTIONCANVAS, INTERACTIONSPATH);
 
-            var bundleName = $"Page_{Number}_environmentcanvas";
+            var bundleName = $"page_{Number}_environmentcanvas";
 
             AssetBundleUtils.AddToBundle(EnvironmentcanvasPath, bundleName);
             AssetBundleUtils.AddToBundle(InteractioncanvasPath, bundleName);
@@ -55,18 +55,18 @@ public class EnvironmentUploader : BaseEditorWindow
 
 
 
-            //string bundlePath = $"{pagePath}/{bundleName}{bundleExtension}";
-            //if (File.Exists(bundlePath))
-            //{
-            //    File.Delete(bundlePath);
-            //}
+            string bundlePath = $"{pagePath}/{bundleName}{bundleExtension}";
+            if (File.Exists(bundlePath))
+            {
+                File.Delete(bundlePath);
+            }
 
             AssetDatabase.Refresh();
 
 
-       //     string source = Path.GetFullPath($"{EXPORTFOLDER}/{bundleName}{bundleExtension}");
+           string source = Path.GetFullPath($"{EXPORTFOLDER}/{bundleName}{bundleExtension}");
 
-           // MoveFiles(source, bundlePath);
+           MoveFiles(source, bundlePath);
 
             AssetDatabase.Refresh();
         }
