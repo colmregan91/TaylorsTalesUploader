@@ -58,7 +58,7 @@ The video is recorded **in the editor, not in a build**. The pipeline relies on 
 4. Optional: install the Android module so the video shows release bundles.
 5. Optional: save the Recording Layout under Window → Layouts → Save Layout.
 6. Nothing has been committed. The diff includes many image `.meta` changes, which are Unity 6 reserializing the importers and are expected.
-7. **Reminder: when everything above is finished, write an updated portfolio description** to replace the one quoted under "Current goal". Write it in the owner's first-person voice and keep the separation-of-concerns point. Reflect what the uploader can now do:
+7. **Done (2026-10-29):** the portfolio description has been rewritten in `PortfolioWithReact/public/projectsInfo.json` (id 6, `introText[1]` and `infoText[1]`). It covers an intro plus four sections: Page Text, Environment, Facts, and Word and Sentence libraries. The video is `public/videos/candfUploader.mp4`. The original reminder follows. **Reminder: when everything above is finished, write an updated portfolio description** to replace the one quoted under "Current goal". Write it in the owner's first-person voice and keep the separation-of-concerns point. Reflect what the uploader can now do:
    - The Book Pages overview.
    - Language-aware page text with fact trigger-word marking.
    - The scene checks before building a bundle.
