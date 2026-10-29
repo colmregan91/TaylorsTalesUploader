@@ -61,11 +61,11 @@ public class MetaballParticleClass : MonoBehaviour {
 	{
 		
 		
-		Vector2 _vel = rb.velocity;
+		Vector2 _vel = rb.linearVelocity;
 		if (_vel.y < -8f) {
 			_vel.y = -8f;
 		}
-		rb.velocity = _vel;
+		rb.linearVelocity = _vel;
 	}
 
 }

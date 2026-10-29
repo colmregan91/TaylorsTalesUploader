@@ -1,16 +1,28 @@
-using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEditor;
 
 public class WordListGenerator : BaseEditorWindow
 {
+    private const int Columns = 6;
+    private static readonly char[] Separators = { ' ', '\n', '.', '“', '”', '"', ',', '?', '!', ';', ':', '(', ')' };
+
     string[] wordsForLanguage;
+    HashSet<string> triggerWords = new HashSet<string>();
     private Vector2 scrollPos;
+    private string filter = "";
+
+    public override void OnEnable()
+    {
+        base.OnEnable();
+        wordsForLanguage = WordsForLanguage(CurrentLanguageIndex);
+    }
 
     private string[] WordsForLanguage(Languages languageIndex)
     {
-        List<string> savedWords = new List<string>();
+        var savedWords = new HashSet<string>();
+        triggerWords.Clear();
         var languagedata = GetLanguages(languageIndex);
 
         if (languagedata == null)
@@ -20,74 +32,69 @@ public class WordListGenerator : BaseEditorWindow
 
         for (int i = 0; i < languagedata.items.Length; i++)
         {
-            var words = languagedata.items[i].value.Split(' ', '\n', '.', '�', '�', ',', '?');
+            var words = languagedata.items[i].value.Replace("\\n", "\n").Split(Separators, System.StringSplitOptions.RemoveEmptyEntries);
 
-            for (int j = 0; j < words.Length; j++)
+            foreach (var word in words)
             {
-                var newword = string.Empty;
-                if (words[j].Contains("<color=red>"))
-                {
-                    var wordwithExtra = words[j];
-                    newword = wordwithExtra.Replace("<color=red>", "").Replace("</color=red>", "");
-                }
-                else
-                {
-                    newword = words[j];
-                }
+                bool isTrigger = word.Contains("<color=red>");
+                var wordToLower = word.Replace("<color=red>", "").Replace("</color=red>", "").Trim('\'', '’', '‘').ToLower();
+                if (wordToLower.Length == 0) continue;
 
-                var wordToLower = newword.ToLower();
-                if (!savedWords.Contains(wordToLower))
-                {
-
-                    savedWords.Add(wordToLower);
-                }
+                savedWords.Add(wordToLower);
+                if (isTrigger) triggerWords.Add(wordToLower);
             }
         }
 
-
-
-        return savedWords.ToArray();
+        return savedWords.OrderBy(w => w).ToArray();
     }
 
     private void OnGUI()
     {
+        DrawHeader("Word List", "Every unique word in the book, fact trigger words highlighted");
         DisplayLanguageButtons(() => wordsForLanguage = WordsForLanguage(CurrentLanguageIndex));
 
-        if (wordsForLanguage != null)
+        if (wordsForLanguage == null)
         {
-            scrollPos = EditorGUILayout.BeginScrollView(scrollPos, GUILayout.Width(Screen.width / 1.3f), GUILayout.Height(Screen.height / 1.4f));
-
-            var areaStyle = new GUIStyle(GUI.skin.textArea);
-            areaStyle.wordWrap = true;
-            areaStyle.fontSize = 15;
-            int wordsPerRow = Mathf.CeilToInt((float)wordsForLanguage.Length / 6);
-
-            for (int rowIndex = 0; rowIndex < wordsPerRow; rowIndex++)
-            {
-                EditorGUILayout.BeginHorizontal();
-
-                for (int columnIndex = 0; columnIndex < 6; columnIndex++)
-                {
-                    int wordIndex = rowIndex + columnIndex * wordsPerRow;
-
-                    if (wordIndex < wordsForLanguage.Length)
-                    {
-                        GUILayout.Label(wordsForLanguage[wordIndex], areaStyle, GUILayout.Width(Screen.width / 6));
-                    }
-                    else
-                    {
-                        GUILayout.Label("", areaStyle, GUILayout.Width(Screen.width / 6));
-                    }
-                }
-
-                EditorGUILayout.EndHorizontal();
-                EditorGUILayout.Space(5);
-            }
-
-            EditorGUILayout.EndScrollView();
+            EditorGUILayout.HelpBox($"No source text found at {LANGUAGESPATH}/{CurrentLanguageIndex}.txt", MessageType.Info);
+            return;
         }
 
+        EditorGUILayout.BeginHorizontal();
+        filter = EditorGUILayout.TextField("Filter", filter);
+        GUILayout.Label($"{wordsForLanguage.Length} words  •  {triggerWords.Count} triggers", EditorStyles.miniLabel, GUILayout.Width(160));
+        EditorGUILayout.EndHorizontal();
 
+        var shown = string.IsNullOrEmpty(filter) ? wordsForLanguage : wordsForLanguage.Where(w => w.Contains(filter.ToLower())).ToArray();
+
+        scrollPos = EditorGUILayout.BeginScrollView(scrollPos);
+
+        var wordStyle = new GUIStyle(EditorStyles.helpBox) { fontSize = 13, alignment = TextAnchor.MiddleLeft };
+        var triggerStyle = new GUIStyle(wordStyle) { fontStyle = FontStyle.Bold, normal = { textColor = new Color(1f, 0.42f, 0.3f) } };
+        float columnWidth = (position.width - 30) / Columns;
+        int rows = Mathf.CeilToInt((float)shown.Length / Columns);
+
+        for (int rowIndex = 0; rowIndex < rows; rowIndex++)
+        {
+            EditorGUILayout.BeginHorizontal();
+
+            for (int columnIndex = 0; columnIndex < Columns; columnIndex++)
+            {
+                int wordIndex = rowIndex + columnIndex * rows; // fill down each column so the list reads alphabetically
+
+                if (wordIndex < shown.Length)
+                {
+                    var word = shown[wordIndex];
+                    GUILayout.Label(word, triggerWords.Contains(word) ? triggerStyle : wordStyle, GUILayout.Width(columnWidth));
+                }
+                else
+                {
+                    GUILayout.Label("", GUIStyle.none, GUILayout.Width(columnWidth));
+                }
+            }
+
+            EditorGUILayout.EndHorizontal();
+        }
+
+        EditorGUILayout.EndScrollView();
     }
 }
-

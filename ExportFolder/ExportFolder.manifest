@@ -1,7 +1,9 @@
 ManifestFileVersion: 0
-CRC: 989687244
+UnityVersion: 6000.4.1f1
+CRC: 1073208479
+HashAppended: 0
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: page_3_environmentcanvas.unity3d
+      Name: page_1_environmentcanvas.unity3d
       Dependencies: {}

@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
@@ -15,10 +14,14 @@ public enum Languages
 }
 public class BaseEditorWindow : EditorWindow
 {
+    protected const string MENUROOT = "Taylor's Tales/";
+    protected const string BOOKNAME = "ChickenAndTheFox";
 
     [Header("Paths")]
 
     protected string ASSETPATH; // uses persistent data path and cant be used in declaration, declared in onenable
+    protected string PAGESPATH => $"{ASSETPATH}/Pages";
+    protected string FACTSOUTPUTPATH => $"{ASSETPATH}/Facts";
     protected const string FACTPATH = "Assets/StreamingAssets/Facts";
     protected const string LANGUAGESPATH = "Assets/StreamingAssets/PageTexts";
     protected const string EXPORTFOLDER = "Assets/../ExportFolder";
@@ -40,70 +43,50 @@ public class BaseEditorWindow : EditorWindow
     protected Languages CurrentLanguageIndex = Languages.English;
     protected const int LANGUAGESAVAILABLE = 4;
 
+    protected static readonly Color AccentColour = new Color(0.24f, 0.49f, 0.91f); // matches the editor's selection blue
+    protected static readonly string[] ImageExtensions = { ".png", ".jpg", ".jpeg" };
 
     protected string getLanguageName(Languages language)
     {
-        switch (language)
-        {
-            case Languages.English: return "English";
-            case Languages.Irish: return "Irish";
-            case Languages.French: return "French";
-            case Languages.Spanish: return "Spanish";
-        }
-        Debug.Log("Language not in list");
-        return null;
+        return Enum.IsDefined(typeof(Languages), language) ? language.ToString() : null;
     }
-  
 
     protected void RecreateDirectory(string directory)
     {
-
         if (Directory.Exists(directory)) { Directory.Delete(directory, true); }
         Directory.CreateDirectory(directory);
     }
+
     protected LocalisedData GetLanguages(Languages index)
     {
-        string langName = getLanguageName(index);
-        Debug.Log(langName);
-        string fileName = $"{LANGUAGESPATH}/{langName}.txt";
+        string fileName = $"{LANGUAGESPATH}/{getLanguageName(index)}.txt";
+        if (!File.Exists(fileName)) return null;
 
-        if (File.Exists(fileName))
-        {
-            var text = File.ReadAllText(fileName);
-
-            var loadeddata = JsonUtility.FromJson<LocalisedData>(text);
-            return loadeddata;
-        }
-        else
-        {
-            return null;
-        }
+        return JsonUtility.FromJson<LocalisedData>(File.ReadAllText(fileName));
     }
 
     public virtual void OnEnable()
-    {Debug.Log(ASSETPATH);
-        ASSETPATH = $"{Application.persistentDataPath}/../TaylorsTalesAssets/ChickenAndTheFox";
-        string FactPath = $"{ASSETPATH}/Facts";
-        if (!Directory.Exists(ASSETPATH))
-        {
-            Directory.CreateDirectory(ASSETPATH);
-        }
-
+    {
+        ASSETPATH = Path.GetFullPath($"{Application.persistentDataPath}/../TaylorsTalesAssets/{BOOKNAME}");
+        Directory.CreateDirectory(PAGESPATH);
+        Directory.CreateDirectory(FACTSOUTPUTPATH);
     }
 
     protected string[] getFileswithoutMetaManifestFiles(string directoryPath)
     {
         return Directory.GetFiles(directoryPath).Where(T => // get files in folder that arent manifest or meta files
- !Path.GetExtension(T).Equals(".unity3d.manifest") ||
- !Path.GetExtension(T).Equals(".manifest") ||
- !Path.GetExtension(T).Equals(".meta")).ToArray();
+            !T.EndsWith(manifestExtension, StringComparison.OrdinalIgnoreCase) &&
+            !T.EndsWith(metaExtension, StringComparison.OrdinalIgnoreCase)).ToArray();
     }
 
-    protected string[] getJPGsorPNGs(string directoryPath) // should only accept png really
+    protected string[] getJPGsorPNGs(string directoryPath)
     {
-        return Directory.GetFiles(directoryPath).Where(T => // get files in folder that arent manifest or meta files
- Path.GetExtension(T).Equals(".jpg") || Path.GetExtension(T).Equals(".JPG") || Path.GetExtension(T).Equals(".PNG") ||
- Path.GetExtension(T).Equals(".png")).ToArray();
+        if (!Directory.Exists(directoryPath)) return new string[0];
+
+        return Directory.GetFiles(directoryPath)
+            .Where(T => ImageExtensions.Contains(Path.GetExtension(T).ToLowerInvariant()))
+            .Select(T => T.Replace('\\', '/'))
+            .ToArray();
     }
 
     protected void CreateDirectoryIfDoesntExist(string path)
@@ -115,130 +98,176 @@ public class BaseEditorWindow : EditorWindow
         }
     }
 
-
     protected void MoveFiles(string source, string target)
     {
+        if (File.Exists(target)) File.Delete(target);
         File.Move(source, target);
     }
 
-    protected List<String> GetLanguageForPage(int pageNumber)
-    {
-        var languageListJSON = new List<string>();
-        var languages = Directory.GetFiles(LANGUAGESPATH);
-
-        foreach (string file in languages)
-        {
-            if (Path.GetExtension(file).Equals(".txt"))
-            {
-                var text = File.ReadAllText(file);
-                var loadeddata = JsonUtility.FromJson<LocalisedData>(text);
-                languageListJSON.Add(loadeddata.items[pageNumber - 1].value);
-            }
-
-        }
-
-        return languageListJSON;
-
-    }
-
-
-
     protected void DeleteFile(string filepath)
     {
-        File.Delete(filepath);
-
+        if (File.Exists(filepath)) File.Delete(filepath);
     }
 
-    protected void DisplayLanguageButtons(Action callback = null)
+    protected void DisplayLanguageButtons(Action callback = null, Func<Languages, bool> hasContent = null)
     {
+        var labels = Enum.GetValues(typeof(Languages)).Cast<Languages>()
+            .Select(l => hasContent == null ? l.ToString() : $"{l} {(hasContent(l) ? "●" : "○")}")
+            .ToArray();
 
-        EditorGUILayout.BeginHorizontal();
-        if (GUILayout.Button("English"))
+        var selected = (Languages)GUILayout.Toolbar((int)CurrentLanguageIndex, labels, GUILayout.Height(24));
+        if (selected != CurrentLanguageIndex)
         {
-            CurrentLanguageIndex = Languages.English;
+            CurrentLanguageIndex = selected;
+            GUI.FocusControl(null);
             callback?.Invoke();
             Repaint();
         }
+    }
 
-        if (GUILayout.Button("Irish"))
-        {
-            CurrentLanguageIndex = Languages.Irish;
-            callback?.Invoke();
-            Repaint();
-        }
-        if (GUILayout.Button("French"))
-        {
-            CurrentLanguageIndex = Languages.French;
-            callback?.Invoke();
-            Repaint();
-        }
-        if (GUILayout.Button("Spanish"))
-        {
-            CurrentLanguageIndex = Languages.Spanish;
-            callback?.Invoke();
-            Repaint();
-        }
-        EditorGUILayout.EndHorizontal();
+    protected GameObject FindTagged(string gameobjectTag)
+    {
+        try { return GameObject.FindWithTag(gameobjectTag); }
+        catch (UnityException) { return null; } // tag not defined in TagManager
     }
 
     protected string GetPrefabPath(string gameobjectTag, string prefabPath)
     {
+        var canvas = FindTagged(gameobjectTag);
 
-        var EnvironmentCanvas = GameObject.FindWithTag(gameobjectTag);
-
-        if (EnvironmentCanvas == null)
+        if (canvas == null)
         {
-            Debug.LogError($"CANT FIND ENVIRONEMNT CANVAS, PLEASE ENSURE THE ENVIRONMENT CANVAS USES TAG : {gameobjectTag}");
+            Debug.LogError($"Can't find a canvas tagged '{gameobjectTag}' in the open scene.");
             return null;
         }
-        string CanvasPath = prefabPath + EnvironmentCanvas.name + ".prefab";
-        if (File.Exists(CanvasPath))
-        {
-            File.Delete(CanvasPath);
-            AssetDatabase.Refresh();
-        }
-        PrefabUtility.SaveAsPrefabAsset(EnvironmentCanvas, CanvasPath);
 
+        Directory.CreateDirectory(prefabPath);
+        string CanvasPath = prefabPath + canvas.name + ".prefab";
+        PrefabUtility.SaveAsPrefabAsset(canvas, CanvasPath); // overwriting in place keeps the prefab guid stable
         AssetDatabase.Refresh();
         return CanvasPath;
-
     }
 
+    // ---------- shared UI ----------
 
-
-    [MenuItem("EditorWindows/Fact uploader")]
-    public static void ShowFactUploadWindow()
+    protected void DrawHeader(string title, string subtitle)
     {
-        GetWindow<FactUploader>("Fact Uploader");
+        EditorGUILayout.Space(6);
+        GUILayout.Label(title, new GUIStyle(EditorStyles.boldLabel) { fontSize = 15 });
+        GUILayout.Label(subtitle, EditorStyles.miniLabel);
+
+        var line = EditorGUILayout.GetControlRect(false, 1);
+        EditorGUI.DrawRect(line, new Color(0.5f, 0.5f, 0.5f, 0.35f));
+        EditorGUILayout.Space(4);
     }
 
-    [MenuItem("EditorWindows/Environment uploader")]
-    public static void ShowPageUploadWindow()
+    protected void DrawOutputInfo(string folder)
     {
-        GetWindow<EnvironmentUploader>("Environment uploader");
+        EditorGUILayout.BeginHorizontal(EditorStyles.helpBox);
+        var target = AssetBundleUtils.SelectedTarget;
+        var installed = AssetBundleUtils.IsTargetInstalled(target);
+        GUILayout.Label(EditorGUIUtility.IconContent(installed ? "TestPassed" : "console.warnicon.sml"), GUILayout.Width(18), GUILayout.Height(18));
+        GUILayout.Label(installed ? $"Bundles: {target}" : $"Bundles: {target} not installed, using {EditorUserBuildSettings.activeBuildTarget}", EditorStyles.miniLabel);
+        GUILayout.FlexibleSpace();
+        if (GUILayout.Button("Open output folder", EditorStyles.miniButton))
+        {
+            Directory.CreateDirectory(folder);
+            EditorUtility.RevealInFinder(folder + "/");
+        }
+        EditorGUILayout.EndHorizontal();
+        EditorGUILayout.LabelField(folder, EditorStyles.centeredGreyMiniLabel);
     }
 
-    [MenuItem("EditorWindows/PageText uploader")]
+    protected void StatusRow(bool ok, string label, bool optional = false)
+    {
+        EditorGUILayout.BeginHorizontal();
+        var icon = ok ? "TestPassed" : optional ? "console.warnicon.sml" : "TestFailed";
+        GUILayout.Label(EditorGUIUtility.IconContent(icon), GUILayout.Width(18), GUILayout.Height(18));
+        GUILayout.Label(label);
+        EditorGUILayout.EndHorizontal();
+    }
+
+    internal static bool SuppressDialogs; // set by automated runs so modal dialogs don't block the editor
+
+    protected void ShowError(string title, string message)
+    {
+        Debug.LogError($"[{title}] {message}");
+        if (!SuppressDialogs) EditorUtility.DisplayDialog(title, message, "OK");
+    }
+
+    protected void ShowResult(string title, string message, string folder)
+    {
+        Debug.Log($"[{title}] {message.Replace("\n\n", " ")}");
+        if (SuppressDialogs) return;
+        if (EditorUtility.DisplayDialog(title, message, "Open folder", "OK"))
+        {
+            EditorUtility.RevealInFinder(folder + "/");
+        }
+    }
+
+    // "page 11" -> 11, "Page4" -> 4, "TitlePage" -> 0, anything else -> -1
+    protected static int PageNumberFromScene(string sceneName)
+    {
+        if (sceneName.Equals("TitlePage", StringComparison.OrdinalIgnoreCase)) return 0;
+        var match = System.Text.RegularExpressions.Regex.Match(sceneName, @"^page\s*(\d+)$", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+        return match.Success ? int.Parse(match.Groups[1].Value) : -1;
+    }
+
+    protected static string FormatBytes(long bytes)
+    {
+        if (bytes > 1024 * 1024) return $"{bytes / (1024f * 1024f):0.0} MB";
+        return $"{bytes / 1024f:0} KB";
+    }
+
+    // ---------- menu ----------
+
+    [MenuItem(MENUROOT + "1. Page Text", priority = 1)]
     public static void ShowPageTextUploadWindow()
     {
-        GetWindow<TextPageUploader>("PageText uploader");
+        GetWindow<TextPageUploader>("Page Text");
     }
 
-    [MenuItem("EditorWindows/WordListGenerator")]
+    [MenuItem(MENUROOT + "2. Environment Uploader", priority = 2)]
+    public static void ShowPageUploadWindow()
+    {
+        GetWindow<EnvironmentUploader>("Environment");
+    }
+
+    [MenuItem(MENUROOT + "3. Fact Uploader", priority = 3)]
+    public static void ShowFactUploadWindow()
+    {
+        GetWindow<FactUploader>("Facts");
+    }
+
+    [MenuItem(MENUROOT + "Tools/Word List", priority = 20)]
     public static void ShowWordListGeneratorWindow()
     {
-        GetWindow<WordListGenerator>("Word List Generator");
+        GetWindow<WordListGenerator>("Word List");
     }
 
-    [MenuItem("EditorWindows/SentenceListGenerator")]
+    [MenuItem(MENUROOT + "Tools/Sentence List", priority = 21)]
     public static void ShowSentenceListGeneratorWindow()
     {
-        GetWindow<SentenceListGenerator>("Sentence List Generator");
+        GetWindow<SentenceListGenerator>("Sentence List");
     }
 
-    //[MenuItem("EditorWindows/InteractionCanvas uploader")]
-    //public static void ShowPInteractionsUploadWindow()
-    //{
-    //    GetWindow<InteractionsUploader>("Interaction uploader");
-    //}
+    [MenuItem(MENUROOT + "Tools/Bundle Target/Android (release)", priority = 40)]
+    static void TargetAndroid() => AssetBundleUtils.SelectedTarget = BuildTarget.Android;
+
+    [MenuItem(MENUROOT + "Tools/Bundle Target/Android (release)", true)]
+    static bool TargetAndroidCheck() { Menu.SetChecked(MENUROOT + "Tools/Bundle Target/Android (release)", AssetBundleUtils.SelectedTarget == BuildTarget.Android); return true; }
+
+    [MenuItem(MENUROOT + "Tools/Bundle Target/Windows (local testing)", priority = 41)]
+    static void TargetWindows() => AssetBundleUtils.SelectedTarget = BuildTarget.StandaloneWindows64;
+
+    [MenuItem(MENUROOT + "Tools/Bundle Target/Windows (local testing)", true)]
+    static bool TargetWindowsCheck() { Menu.SetChecked(MENUROOT + "Tools/Bundle Target/Windows (local testing)", AssetBundleUtils.SelectedTarget == BuildTarget.StandaloneWindows64); return true; }
+
+    [MenuItem(MENUROOT + "Open Output Folder", priority = 60)]
+    static void OpenOutput()
+    {
+        var path = Path.GetFullPath($"{Application.persistentDataPath}/../TaylorsTalesAssets/{BOOKNAME}");
+        Directory.CreateDirectory(path);
+        EditorUtility.RevealInFinder(path + "/");
+    }
 }

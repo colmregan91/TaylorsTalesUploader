@@ -298,7 +298,7 @@
 						SetWaterColor (FillColor, StrokeColor);
 					}
 
-					WaterDropsObjects [i].GetComponent<Rigidbody2D> ().velocity = _initSpeed;
+					WaterDropsObjects [i].GetComponent<Rigidbody2D> ().linearVelocity = _initSpeed;
 
 
 					// Count limiter
@@ -356,7 +356,7 @@
                         SetWaterColor(FillColor, StrokeColor);
                     }
 
-                    WaterDropsObjects[i].GetComponent<Rigidbody2D>().velocity = _initSpeed;
+                    WaterDropsObjects[i].GetComponent<Rigidbody2D>().linearVelocity = _initSpeed;
 
 
                     // Count limiter
